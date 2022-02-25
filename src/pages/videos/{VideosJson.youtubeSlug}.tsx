@@ -20,7 +20,7 @@ export default function Component({
       <h1 className="text-2xl text-center mt-0 mb-2">
         {title}{" "}
         <a
-          className="text-sm pb-1 inline-block align-middle hover:text-purple-600 text-purple-800"
+          className="text-sm mb-1 inline-block align-middle hover:text-purple-600 text-purple-800"
           href={`https://youtu.be/${youtubeSlug}`}
           target="_blank"
         >
