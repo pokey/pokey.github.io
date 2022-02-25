@@ -17,6 +17,7 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-sharp",
     "gatsby-plugin-offline",
+    "gatsby-plugin-fontawesome-css",
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",
     {

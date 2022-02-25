@@ -1,7 +1,9 @@
 import * as React from "react";
 import { graphql, PageProps } from "gatsby";
 import Helmet from "react-helmet";
-import { data } from "autoprefixer";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 interface DataProps {
   videosJson: { youtubeSlug: string; title: string };
@@ -15,7 +17,16 @@ export default function Component({
     <main className="p-4 pt-3 max-w-prose sm:mx-auto bg-slate-200 rounded-lg">
       <Helmet bodyAttributes={{ class: "bg-slate-100 p-2 sm:p-6 md:py-8" }} />
       <title>{title}</title>
-      <h1 className="text-2xl text-center mt-0 mb-2">{title}</h1>
+      <h1 className="text-2xl text-center mt-0 mb-2">
+        {title}{" "}
+        <a
+          className="text-sm pb-1 inline-block align-middle hover:text-purple-600 text-purple-800"
+          href={`https://youtu.be/${youtubeSlug}`}
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+        </a>
+      </h1>
       {youtubeSlug}
     </main>
   );
