@@ -4,9 +4,11 @@ import Helmet from "react-helmet";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { Video } from "../../typings/Video";
+import TranscriptItemComponent from "../../components/TranscriptItem";
 
 interface DataProps {
-  videosJson: { youtubeSlug: string; title: string };
+  videosJson: Video;
 }
 
 export default function Component({
@@ -27,7 +29,11 @@ export default function Component({
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </a>
       </h1>
-      {youtubeSlug}
+      <div className="grid grid-cols-1 gap-2">
+        {videosJson.transcript.map((item) => (
+          <TranscriptItemComponent item={item} />
+        ))}
+      </div>
     </main>
   );
 }
