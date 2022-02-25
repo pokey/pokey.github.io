@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Video } from "../../typings/Video";
 import TranscriptItemComponent from "../../components/TranscriptItem";
+import YouTube from "react-youtube";
 
 interface DataProps {
   videosJson: Video;
@@ -29,6 +30,7 @@ export default function Component({
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </a>
       </h1>
+      <YouTube videoId={youtubeSlug} onReady={onReady} />
       <div className="grid grid-cols-1 gap-2">
         {videosJson.transcript.map((item) => (
           <TranscriptItemComponent item={item} />
@@ -36,6 +38,11 @@ export default function Component({
       </div>
     </main>
   );
+}
+
+function onReady(event: any) {
+  // access to player in all event handlers via event.target
+  event.target.seekTo(20);
 }
 
 // This is the page query that connects the data to the actual component. Here you can query for any and all fields
