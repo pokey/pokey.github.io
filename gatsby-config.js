@@ -41,7 +41,6 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
