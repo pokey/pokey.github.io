@@ -5,8 +5,9 @@ import Helmet from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Video } from "../../typings/Video";
-import TranscriptItemComponent from "../../components/TranscriptItem";
+import TranscriptItemView from "../../components/TranscriptItem";
 import YouTube from "react-youtube";
+import VideoWithTranscript from "../../components/VideoWithTranscript";
 
 interface DataProps {
   videosJson: Video;
@@ -30,20 +31,12 @@ export default function Component({
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </a>
       </h1>
-      <YouTube videoId={youtubeSlug} onReady={onReady} />
-      <div className="grid grid-cols-1 gap-2">
-        {videosJson.transcript.map((item) => (
-          <TranscriptItemComponent item={item} />
-        ))}
-      </div>
+      <VideoWithTranscript video={videosJson} />
     </main>
   );
 }
 
-function onReady(event: any) {
-  // access to player in all event handlers via event.target
-  event.target.seekTo(20);
-}
+
 
 // This is the page query that connects the data to the actual component. Here you can query for any and all fields
 // you need access to within your code. Again, since Gatsby always queries for `id` in the collection, you can use that

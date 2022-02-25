@@ -5,6 +5,6 @@ type Props = {
   item: TranscriptItem;
 };
 
-export default function TranscriptItemComponent({ item }: Props) {
+export default function TranscriptItemView({ item }: Props) {
   return <div>{item.phrase}</div>;
 }
