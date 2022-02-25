@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpokey_rule=self.webpackChunkpokey_rule||[]).push([[173],{7688:function(e,u,t){t.r(u),t.d(u,{default:function(){return a}});var n=t(7294);function a(e){var u=e.data.videosJson;return n.createElement("main",{className:"text-2xl"},u.youtubeSlug)}}}]);
-//# sourceMappingURL=component---src-pages-videos-videos-json-youtube-slug-tsx-757e6c5cdda13f9e3720.js.map
