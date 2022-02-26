@@ -14,22 +14,7 @@ type Props = {
 export default function VideoWithTranscript({ video }: Props) {
   const { transcript, youtubeSlug } = video;
   const [player, setPlayer] = useState<YouTubePlayer | null>(null);
-  const [playerState, setPlayerState] = useState<PlayerStates | null>(null);
   const [playbackTime, setPlaybackTime] = useState<number | null>(null);
-
-  const updatePlaybackTime = useCallback(() => {
-    if (player != null) {
-      setPlaybackTime(player!.getCurrentTime());
-    }
-  }, [player]);
-
-  useEffect(updatePlaybackTime, [player]);
-  useEffect(updatePlaybackTime, [playerState]);
-
-  useInterval(
-    updatePlaybackTime,
-    player == null || playerState !== PlayerStates.PLAYING ? null : 1000
-  );
 
   useEffect(() => {
     console.log(`player.getCurrentTime() = ${playbackTime}`);
@@ -40,7 +25,7 @@ export default function VideoWithTranscript({ video }: Props) {
       <EmbeddedVideo
         youtubeSlug={youtubeSlug}
         setPlayer={setPlayer}
-        setPlayerState={setPlayerState}
+        setPlaybackTime={setPlaybackTime}
       />
       <div className="grid grid-cols-1 gap-2">
         {transcript.map((item) => (
