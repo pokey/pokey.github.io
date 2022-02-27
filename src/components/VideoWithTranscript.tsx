@@ -5,7 +5,7 @@ import { YouTubePlayer } from "youtube-player/dist/types";
 import useInterval from "../hooks/useInterval";
 import { Video } from "../typings/Video";
 import EmbeddedVideo from "./EmbeddedVideo";
-import TranscriptItemView from "./TranscriptItem";
+import TranscriptItemView from "./TranscriptItemView";
 
 type Props = {
   video: Video;
@@ -18,6 +18,15 @@ export default function VideoWithTranscript({ video }: Props) {
 
   useEffect(() => {
     console.log(`player.getCurrentTime() = ${playbackTime}`);
+    const activeItem = transcript.find(
+      (item) =>
+        playbackTime != null &&
+        playbackTime > item.startOffset &&
+        playbackTime <= item.endOffset
+    );
+    if (activeItem != null) {
+      scrollTo(activeItem.id);
+    }
   }, [playbackTime]);
 
   return (
@@ -27,11 +36,23 @@ export default function VideoWithTranscript({ video }: Props) {
         setPlayer={setPlayer}
         setPlaybackTime={setPlaybackTime}
       />
-      <div className="grid grid-cols-1 gap-2">
+      <div className="grid grid-cols-1 gap-5">
         {transcript.map((item) => (
-          <TranscriptItemView item={item} />
+          <TranscriptItemView
+            item={item}
+            isHighlighted={
+              playbackTime != null &&
+              playbackTime > item.startOffset &&
+              playbackTime <= item.endOffset
+            }
+          />
         ))}
       </div>
     </div>
   );
+}
+
+// From https://stackoverflow.com/a/3163635
+function scrollTo(hash: string) {
+  location.hash = "#" + hash;
 }

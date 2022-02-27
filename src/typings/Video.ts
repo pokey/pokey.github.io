@@ -15,6 +15,6 @@ export interface TranscriptItem {
   commands: Command[];
   id: string;
   phrase: string;
-  startTimecode: string;
-  endTimecode: string;
+  startOffset: number;
+  endOffset: number;
 }
