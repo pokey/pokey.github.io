@@ -38,7 +38,7 @@ export default function VideoWithTranscript({ video }: Props) {
           setPlaybackTime={setPlaybackTime}
         />
       </div>
-      <div className="wide:flex-1 wide:h-full flex flex-col gap-2 max-w-prose overflow-y-scroll">
+      <div className="wide:flex-1 wide:h-full flex flex-col gap-2 max-w-prose mx-auto overflow-y-auto">
         {transcript
           // .concat(...transcript, ...transcript, ...transcript)
           .map((item) => (
