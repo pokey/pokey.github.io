@@ -4,6 +4,9 @@ import { Video } from "../typings/Video";
 import TranscriptItemView from "./TranscriptItemView";
 import EmbeddedVideo, { useEmbeddedVideoController } from "./EmbeddedVideo";
 
+// @ts-ignore
+import smoothscrollAnchorPolyfill from "smoothscroll-anchor-polyfill";
+
 type Props = {
   video: Video;
 };
