@@ -37,18 +37,16 @@ export default function VideoWithTranscript({ video }: Props) {
         />
       </div>
       <div className="scroll-smooth wide:flex-1 wide:h-full flex flex-col gap-2 max-w-prose mx-auto overflow-y-auto p-2 bg-slate-200 rounded-lg">
-        {transcript
-          // .concat(...transcript, ...transcript, ...transcript)
-          .map((item) => (
-            <TranscriptItemView
-              item={item}
-              isHighlighted={
-                playbackTime != null &&
-                playbackTime > item.startOffset &&
-                playbackTime <= item.endOffset
-              }
-            />
-          ))}
+        {transcript.map((item) => (
+          <TranscriptItemView
+            item={item}
+            isHighlighted={
+              playbackTime != null &&
+              playbackTime > item.startOffset &&
+              playbackTime <= item.endOffset
+            }
+          />
+        ))}
       </div>
     </div>
   );
