@@ -30,7 +30,7 @@ export default function VideoWithTranscript({ video }: Props) {
   }, [playbackTime]);
 
   return (
-    <div className="w-full max-h-full flex flex-col gap-2 wide:flex-row wide:my-auto">
+    <div className="w-full max-h-full flex flex-col gap-2 lg:gap-4 xl:gap-6 wide:flex-row wide:my-auto">
       <div className="wide:flex-[2] wide:my-auto">
         <EmbeddedVideo
           youtubeSlug={youtubeSlug}
@@ -38,7 +38,7 @@ export default function VideoWithTranscript({ video }: Props) {
           setPlaybackTime={setPlaybackTime}
         />
       </div>
-      <div className="wide:flex-1 wide:h-full flex flex-col gap-2 max-w-prose mx-auto overflow-y-auto">
+      <div className="wide:flex-1 wide:h-full flex flex-col gap-2 max-w-prose mx-auto overflow-y-auto p-2 bg-slate-200 rounded-lg">
         {transcript
           // .concat(...transcript, ...transcript, ...transcript)
           .map((item) => (
