@@ -1,13 +1,8 @@
 import * as React from "react";
 import { useEffect } from "react";
-import smoothscroll from "smoothscroll-polyfill";
 import { Video } from "../typings/Video";
 import TranscriptItemView from "./TranscriptItemView";
 import EmbeddedVideo, { useEmbeddedVideoController } from "./EmbeddedVideo";
-
-if (typeof window !== "undefined") {
-  smoothscroll.polyfill();
-}
 
 type Props = {
   video: Video;
