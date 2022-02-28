@@ -19,7 +19,7 @@ export default function Component({
   const { youtubeSlug, title } = videosJson;
   return (
     <main className="h-screen p-2 lg:p-4 xl:p-6">
-      <div className="h-full max-w-[130vh] wide:max-w-none flex flex-col p-2 mx-auto bg-slate-200 rounded-lg">
+      <div className="h-full max-w-[110vh] lg:max-w-[130vh] wide:max-w-none flex flex-col p-2 mx-auto bg-slate-200 rounded-lg">
         <Helmet bodyAttributes={{ class: "bg-slate-100 " }} />
         <title>{title}</title>
         <VideoWithTranscript video={videosJson} />
