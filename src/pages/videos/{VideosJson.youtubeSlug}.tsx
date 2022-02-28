@@ -18,20 +18,10 @@ export default function Component({
 }: PageProps<DataProps>) {
   const { youtubeSlug, title } = videosJson;
   return (
-    <main className=" p-2 lg:py-8">
-      <div className="flex flex-col p-2 pt-2 sm:mx-auto bg-slate-200 rounded-lg h-full">
+    <main className="h-screen p-2 lg:p-4 xl:p-6">
+      <div className="h-full max-w-[130vh] wide:max-w-none flex flex-col p-2 mx-auto bg-slate-200 rounded-lg">
         <Helmet bodyAttributes={{ class: "bg-slate-100 " }} />
         <title>{title}</title>
-        <h1 className="text-2xl text-center mt-0 mb-2">
-          {title}{" "}
-          <a
-            className="text-sm mb-1 inline-block align-middle hover:text-purple-600 text-purple-800"
-            href={`https://youtu.be/${youtubeSlug}`}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-          </a>
-        </h1>
         <VideoWithTranscript video={videosJson} />
       </div>
     </main>

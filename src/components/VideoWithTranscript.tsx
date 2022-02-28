@@ -30,25 +30,27 @@ export default function VideoWithTranscript({ video }: Props) {
   }, [playbackTime]);
 
   return (
-    <div className="max-h-screen w-full flex flex-col gap-2 md:flex-row lg:flex-col">
-      <div className="md:flex-[2] lg:flex-1">
+    <div className="w-full max-h-full flex flex-col gap-2 wide:flex-row wide:my-auto">
+      <div className="wide:flex-[2] wide:my-auto">
         <EmbeddedVideo
           youtubeSlug={youtubeSlug}
           setPlayer={setPlayer}
           setPlaybackTime={setPlaybackTime}
         />
       </div>
-      <div className="md:flex-1 grid grid-cols-1 text-xl gap-5 max-w-prose overflow-y-scroll">
-        {transcript.concat(...transcript).map((item) => (
-          <TranscriptItemView
-            item={item}
-            isHighlighted={
-              playbackTime != null &&
-              playbackTime > item.startOffset &&
-              playbackTime <= item.endOffset
-            }
-          />
-        ))}
+      <div className="wide:flex-1 wide:h-full flex flex-col gap-2 max-w-prose overflow-y-scroll">
+        {transcript
+          // .concat(...transcript, ...transcript, ...transcript)
+          .map((item) => (
+            <TranscriptItemView
+              item={item}
+              isHighlighted={
+                playbackTime != null &&
+                playbackTime > item.startOffset &&
+                playbackTime <= item.endOffset
+              }
+            />
+          ))}
       </div>
     </div>
   );

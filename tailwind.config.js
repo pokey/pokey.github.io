@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        wide: { raw: "(min-aspect-ratio: 10/5)" },
+      },
+    },
   },
   plugins: [],
 };
