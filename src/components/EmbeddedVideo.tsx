@@ -7,7 +7,7 @@ import { embedContainer } from "./EmbeddedVideo.module.css";
 
 interface Props {
   youtubeSlug: string;
-  controller: Controller;
+  controller?: Controller;
 }
 
 interface Controller {
@@ -19,7 +19,7 @@ export default function EmbeddedVideo({ youtubeSlug, controller }: Props) {
     <YouTube
       containerClassName={embedContainer}
       videoId={youtubeSlug}
-      onReady={controller.onReady}
+      onReady={controller?.onReady}
     />
   );
 }
@@ -59,6 +59,6 @@ export function useEmbeddedVideoController(
     setPlaybackTime: seekTo,
     controller: {
       onReady,
-    },
+    } as Controller,
   };
 }
