@@ -18,7 +18,7 @@ export default function EmbeddedVideo({
   setPlayer,
   setPlayerState,
   setPlaybackTime,
-  playbackUpdateIntervalMs = 1000,
+  playbackUpdateIntervalMs = 500,
 }: Props) {
   const [player, setPlayerLocal] = useState<YouTubePlayer | null>(null);
 

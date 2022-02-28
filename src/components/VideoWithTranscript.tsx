@@ -1,9 +1,12 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
+import smoothscroll from "smoothscroll-polyfill";
 import { YouTubePlayer } from "youtube-player/dist/types";
 import { Video } from "../typings/Video";
 import EmbeddedVideo from "./EmbeddedVideo";
 import TranscriptItemView from "./TranscriptItemView";
+
+smoothscroll.polyfill();
 
 type Props = {
   video: Video;
