@@ -18,6 +18,21 @@ export default function VideoWithTranscript({ video }: Props) {
   const [playbackTime, setPlaybackTime] = useState<number | null>(null);
 
   useEffect(() => {
+    if (player != null && location.hash.length > 1) {
+      const initialActiveItemId = location.hash.substring(1);
+      const initialActiveItem = transcript.find(
+        (item) => item.id === initialActiveItemId
+      );
+
+      if (initialActiveItem == null) {
+        return;
+      }
+
+      player.seekTo(initialActiveItem.startOffset, true);
+    }
+  }, [player]);
+
+  useEffect(() => {
     console.log(`player.getCurrentTime() = ${playbackTime}`);
     const activeItem = transcript.find(
       (item) =>
@@ -45,7 +60,7 @@ export default function VideoWithTranscript({ video }: Props) {
             item={item}
             isHighlighted={
               playbackTime != null &&
-              playbackTime > item.startOffset &&
+              playbackTime >= item.startOffset &&
               playbackTime <= item.endOffset
             }
           />
