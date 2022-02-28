@@ -2,11 +2,7 @@ import * as React from "react";
 import { graphql, PageProps } from "gatsby";
 import Helmet from "react-helmet";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Video } from "../../typings/Video";
-import TranscriptItemView from "../../components/TranscriptItemView";
-import YouTube from "react-youtube";
 import VideoWithTranscript from "../../components/VideoWithTranscript";
 
 interface DataProps {
@@ -16,7 +12,7 @@ interface DataProps {
 export default function Component({
   data: { videosJson },
 }: PageProps<DataProps>) {
-  const { youtubeSlug, title } = videosJson;
+  const { title } = videosJson;
   return (
     <main className="fixed top-0 bottom-0 left-0 right-0 p-2 lg:p-4 xl:p-6">
       <Helmet bodyAttributes={{ class: "bg-slate-100 " }} />

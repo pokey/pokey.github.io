@@ -1,8 +1,6 @@
 import * as React from "react";
-import { useCallback, useEffect, useState } from "react";
-import PlayerStates from "youtube-player/dist/constants/PlayerStates";
+import { useEffect, useState } from "react";
 import { YouTubePlayer } from "youtube-player/dist/types";
-import useInterval from "../hooks/useInterval";
 import { Video } from "../typings/Video";
 import EmbeddedVideo from "./EmbeddedVideo";
 import TranscriptItemView from "./TranscriptItemView";
