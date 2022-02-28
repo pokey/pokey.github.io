@@ -3,9 +3,7 @@ import { useEffect } from "react";
 import { Video } from "../typings/Video";
 import TranscriptItemView from "./TranscriptItemView";
 import EmbeddedVideo, { useEmbeddedVideoController } from "./EmbeddedVideo";
-
-import "smoothscroll-anchor-polyfill";
-import "../styles/smoothScroll.css";
+import smoothScrollTo from "gatsby-plugin-smoothscroll";
 
 type Props = {
   video: Video;
@@ -65,7 +63,7 @@ export default function VideoWithTranscript({ video }: Props) {
   );
 }
 
-// From https://stackoverflow.com/a/3163635
 function scrollTo(hash: string) {
-  location.hash = "#" + hash;
+  smoothScrollTo(`#${CSS.escape(hash)}`);
+  history.pushState(null, "", "#" + hash);
 }
