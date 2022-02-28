@@ -3,6 +3,7 @@ import { useCallback, useState } from "react";
 import YouTube from "react-youtube";
 import { YouTubePlayer } from "youtube-player/dist/types";
 import useInterval from "../hooks/useInterval";
+import { embedContainer } from "./EmbeddedVideo.module.css";
 
 interface Props {
   youtubeSlug: string;
@@ -16,7 +17,7 @@ interface Controller {
 export default function EmbeddedVideo({ youtubeSlug, controller }: Props) {
   return (
     <YouTube
-      containerClassName="embed-container"
+      containerClassName={embedContainer}
       videoId={youtubeSlug}
       onReady={controller.onReady}
     />
