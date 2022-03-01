@@ -7,6 +7,13 @@
 			"problemMatcher": [],
 			"label": "npm: develop",
 			"detail": "gatsby develop"
+		},
+		{
+			"type": "npm",
+			"script": "developNetwork",
+			"problemMatcher": [],
+			"label": "npm: develop network",
+			"detail": "gatsby develop exposing on network"
 		}
 	]
 }
