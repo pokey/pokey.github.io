@@ -17,7 +17,7 @@ export default function Component({
     <main className="fixed top-0 bottom-0 left-0 right-0 ">
       <Helmet bodyAttributes={{ class: "bg-slate-100 " }} />
       <div className="h-full wide:max-w-[260vh] wide:mx-auto">
-        <div className="h-full p-2 xl:p-4 max-w-[110vh] lg:max-w-[130vh] wide:max-w-none flex flex-col mx-auto">
+        <div className="h-full p-2 max-w-[110vh] lg:max-w-[130vh] wide:max-w-none flex flex-col mx-auto">
           <title>{title}</title>
           <VideoWithTranscript video={video} />
         </div>

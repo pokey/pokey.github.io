@@ -43,7 +43,7 @@ export default function VideoWithTranscript({ video }: Props) {
   }, [playbackTime]);
 
   return (
-    <div className="w-full max-h-full flex flex-col gap-2 xl:gap-4 wide:flex-row wide:my-auto">
+    <div className="w-full max-h-full flex flex-col gap-2 wide:flex-row wide:my-auto">
       <div className="wide:flex-[2] wide:my-auto">
         <EmbeddedVideo youtubeSlug={youtubeSlug} controller={controller} />
       </div>
