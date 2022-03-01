@@ -5,6 +5,11 @@ module.exports = {
       screens: {
         wide: { raw: "(min-aspect-ratio: 10/5)" },
       },
+      colors: {
+        slate: {
+          350: "#AEBCCD",
+        },
+      },
     },
   },
   plugins: [],
