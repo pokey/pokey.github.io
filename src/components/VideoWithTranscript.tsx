@@ -4,6 +4,7 @@ import { Video } from "../typings/Video";
 import TranscriptItemView from "./TranscriptItemView";
 import EmbeddedVideo, { useEmbeddedVideoController } from "./EmbeddedVideo";
 import smoothScrollTo from "gatsby-plugin-smoothscroll";
+import { useHash } from "react-use";
 
 type Props = {
   video: Video;
@@ -14,10 +15,11 @@ export default function VideoWithTranscript({ video }: Props) {
   const [activeItemId, setActiveItemId] = useState<string | undefined>();
   const { playbackTime, setPlaybackTime, controller } =
     useEmbeddedVideoController();
+  const [hash, setHash] = useHash();
 
   useEffect(() => {
-    if (location.hash.length > 1) {
-      const initialActiveItemId = location.hash.substring(1);
+    if (hash.length > 1) {
+      const initialActiveItemId = hash.substring(1);
       const initialActiveItem = transcript.find(
         (item) => item.id === initialActiveItemId
       );
@@ -28,7 +30,7 @@ export default function VideoWithTranscript({ video }: Props) {
 
       setPlaybackTime(initialActiveItem.startOffset, true);
     }
-  }, [setPlaybackTime]);
+  }, [setPlaybackTime, hash]);
 
   useEffect(() => {
     const activeItem =
@@ -58,6 +60,7 @@ export default function VideoWithTranscript({ video }: Props) {
           <TranscriptItemView
             item={item}
             isHighlighted={item.id === activeItemId}
+            setPlaybackTime={setPlaybackTime}
           />
         ))}
       </div>
@@ -67,5 +70,4 @@ export default function VideoWithTranscript({ video }: Props) {
 
 function scrollTo(hash: string) {
   smoothScrollTo(`#${CSS.escape(hash)}`);
-  history.pushState(null, "", "#" + hash);
 }
