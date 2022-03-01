@@ -6,6 +6,9 @@ import EmbeddedVideo, { useEmbeddedVideoController } from "./EmbeddedVideo";
 import smoothScrollTo from "gatsby-plugin-smoothscroll";
 import { useHash } from "react-use";
 
+// Check if window is defined (so if in the browser or in node.js).
+const isBrowser = typeof window !== "undefined";
+
 type Props = {
   video: Video;
 };
@@ -15,7 +18,7 @@ export default function VideoWithTranscript({ video }: Props) {
   const [activeItemId, setActiveItemId] = useState<string | undefined>();
   const { playbackTime, setPlaybackTime, controller } =
     useEmbeddedVideoController();
-  const [hash, setHash] = useHash();
+  const [hash, _] = isBrowser ? useHash() : ["", null];
 
   useEffect(() => {
     if (hash.length > 1) {
