@@ -60,7 +60,6 @@ export default function VideoWithTranscript({ video }: Props) {
           <TranscriptItemView
             item={item}
             isHighlighted={item.id === activeItemId}
-            setPlaybackTime={setPlaybackTime}
           />
         ))}
       </div>

@@ -6,13 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 type Props = {
   item: TranscriptItem;
   isHighlighted: boolean;
-  setPlaybackTime: (seconds: number, allowSeekAhead: boolean) => void;
 };
 
 export default function TranscriptItemView({
   item,
   isHighlighted,
-  setPlaybackTime,
 }: Props) {
   const className = isHighlighted ? "text-slate-900" : "text-slate-500";
   return (
