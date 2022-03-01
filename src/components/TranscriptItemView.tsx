@@ -9,11 +9,11 @@ type Props = {
 };
 
 export default function TranscriptItemView({ item, isHighlighted }: Props) {
-  const border = isHighlighted ? "border-purple-500" : "border-slate-400";
+  const border = isHighlighted ? "border-purple-400" : "border-slate-300";
   return (
     <div
       id={item.id}
-      className={`bg-slate-300 rounded-lg p-2 ${border} border-2 border-solid`}
+      className={`bg-slate-200 rounded-lg p-2 ${border} border-2 max-w-prose border-solid`}
     >
       <h3 className="text-lg">
         <span>{item.phrase}</span>
@@ -33,7 +33,7 @@ export default function TranscriptItemView({ item, isHighlighted }: Props) {
               <a
                 href={command.ruleUri}
                 target="_blank"
-                className="font-mono bg-slate-350 hover:bg-blue-300 text-blue-900 inline-block px-[2px] rounded"
+                className="font-mono bg-slate-350 hover:bg-blue-300 text-blue-700 inline-block px-[2px] rounded"
               >
                 {command.grammar}
               </a>
