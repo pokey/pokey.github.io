@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { graphql, PageProps } from "gatsby";
 import Helmet from "react-helmet";
 
@@ -13,6 +13,7 @@ export default function Component({
   data: { videosJson: video },
 }: PageProps<DataProps>) {
   const { title } = video;
+
   return (
     <main className="fixed top-0 bottom-0 left-0 right-0 ">
       <Helmet bodyAttributes={{ class: "bg-slate-100 " }} />

@@ -1,6 +1,8 @@
 import * as React from "react";
 import { useCallback, useState } from "react";
+import { useKey } from "react-use";
 import YouTube from "react-youtube";
+import PlayerStates from "youtube-player/dist/constants/PlayerStates";
 import { YouTubePlayer } from "youtube-player/dist/types";
 import useInterval from "../hooks/useInterval";
 import { embedContainer } from "./EmbeddedVideo.module.css";
@@ -39,6 +41,23 @@ export function useEmbeddedVideoController(
       setPlaybackTime(player.getCurrentTime());
     }
   }, [player]);
+
+  const togglePlayback = useCallback(() => {
+    console.log(player?.getPlayerState());
+    if (player == null) {
+      return;
+    }
+
+    if (player.getPlayerState() === PlayerStates.PLAYING) {
+      player.pauseVideo();
+    } else {
+      player.playVideo();
+    }
+  }, [player]);
+
+  useKey(" ", () => {
+    togglePlayback();
+  });
 
   const seekTo = useCallback(
     (seconds: number, allowSeekAhead: boolean) => {
