@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { TranscriptItem } from "../typings/Video";
 import { formatDuration } from "../util/duration";
 

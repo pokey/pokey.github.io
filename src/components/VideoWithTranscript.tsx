@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { useEffect, useState } from "react";
 import { Video } from "../typings/Video";
 import TranscriptItemView from "./TranscriptItemView";
