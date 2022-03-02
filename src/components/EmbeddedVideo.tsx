@@ -26,6 +26,11 @@ export default function EmbeddedVideo({ youtubeSlug, controller }: Props) {
   );
 }
 
+/**
+ * Keys that can be used to toggle playback
+ */
+const TOGGLE_KEYS = [" ", "k"];
+
 export function useEmbeddedVideoController(
   playbackUpdateIntervalMs: number = 500
 ) {
@@ -42,8 +47,7 @@ export function useEmbeddedVideoController(
     }
   }, [player]);
 
-  const togglePlayback = useCallback(() => {
-    console.log(player?.getPlayerState());
+  const togglePlayback = () => {
     if (player == null) {
       return;
     }
@@ -53,11 +57,11 @@ export function useEmbeddedVideoController(
     } else {
       player.playVideo();
     }
-  }, [player]);
+  };
 
-  useKey(" ", () => {
-    togglePlayback();
-  });
+  useKey((event) => TOGGLE_KEYS.includes(event.key), togglePlayback, {}, [
+    player,
+  ]);
 
   const seekTo = useCallback(
     (seconds: number, allowSeekAhead: boolean) => {
