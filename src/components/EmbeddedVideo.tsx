@@ -59,9 +59,15 @@ export function useEmbeddedVideoController(
     }
   };
 
-  useKey((event) => TOGGLE_KEYS.includes(event.key), togglePlayback, {}, [
-    player,
-  ]);
+  useKey(
+    (event) => TOGGLE_KEYS.includes(event.key),
+    (event) => {
+      togglePlayback();
+      event.preventDefault();
+    },
+    {},
+    [player]
+  );
 
   const seekTo = useCallback(
     (seconds: number, allowSeekAhead: boolean) => {
