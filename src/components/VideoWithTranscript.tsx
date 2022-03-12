@@ -41,7 +41,7 @@ export default function VideoWithTranscript({ video }: Props) {
         ? null
         : transcript.find(
             (item) =>
-              playbackTime >= item.startOffset && playbackTime <= item.endOffset
+              playbackTime >= item.startOffset && playbackTime < item.endOffset
           );
 
     setActiveItemId(activeItem?.id);
