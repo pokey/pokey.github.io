@@ -58,7 +58,7 @@ export default function VideoWithTranscript({ video }: Props) {
       <div className="wide:flex-[2] wide:my-auto">
         <EmbeddedVideo youtubeSlug={youtubeSlug} controller={controller} />
       </div>
-      <div className="wide:flex-1 wide:h-full flex flex-col gap-2 mx-auto overflow-y-auto dark:scrollbar-thin dark:scrollbar-thumb-rounded dark:scrollbar-thumb-stone-600 dark:scrollbar-track-black">
+      <div className="wide:flex-1 wide:h-full flex flex-col gap-2 mx-auto overflow-y-auto ">
         {transcript.map((item) => (
           <TranscriptItemView
             item={item}
