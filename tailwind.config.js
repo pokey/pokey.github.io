@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        wide: { raw: "(min-aspect-ratio: 10/5)" },
+        wide: { raw: "(min-aspect-ratio: 7/5)" },
       },
       colors: {
         slate: {
@@ -12,5 +12,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

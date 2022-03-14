@@ -15,10 +15,10 @@ export default function Component({
   const { title } = video;
 
   return (
-    <main className="fixed top-0 bottom-0 left-0 right-0 ">
-      <Helmet bodyAttributes={{ class: "bg-slate-100 " }} />
+    <main className="fixed top-0 bottom-0 left-0 right-0 dark:text-stone-200">
+      <Helmet bodyAttributes={{ class: "bg-stone-100 dark:bg-black " }} />
       <div className="h-full wide:max-w-[260vh] wide:mx-auto">
-        <div className="h-full p-2 max-w-[110vh] lg:max-w-[120vh] wide:max-w-none flex flex-col mx-auto">
+        <div className="h-full p-2 max-w-xl wide:max-w-none flex flex-col mx-auto">
           <title>{title}</title>
           <VideoWithTranscript video={video} />
         </div>
@@ -44,8 +44,10 @@ export const query = graphql`
         }
         id
         phrase
+        graceStartOffset
         startOffset
         endOffset
+        graceEndOffset
       }
       title
     }

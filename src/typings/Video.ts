@@ -15,6 +15,8 @@ export interface TranscriptItem {
   commands: Command[];
   id: string;
   phrase: string;
+  graceStartOffset: number;
   startOffset: number;
   endOffset: number;
+  graceEndOffset: number;
 }

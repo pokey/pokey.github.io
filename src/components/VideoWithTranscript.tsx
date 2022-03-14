@@ -41,7 +41,8 @@ export default function VideoWithTranscript({ video }: Props) {
         ? null
         : transcript.find(
             (item) =>
-              playbackTime >= item.startOffset && playbackTime < item.endOffset
+              playbackTime >= item.graceStartOffset &&
+              playbackTime < item.graceEndOffset
           );
 
     setActiveItemId(activeItem?.id);
@@ -55,7 +56,7 @@ export default function VideoWithTranscript({ video }: Props) {
 
   return (
     <div className="w-full max-h-full flex flex-col gap-2 wide:flex-row wide:my-auto">
-      <div className="wide:flex-[2] wide:my-auto">
+      <div className="wide:flex-[2] ">
         <EmbeddedVideo youtubeSlug={youtubeSlug} controller={controller} />
       </div>
       <div className="wide:flex-1 wide:h-full flex flex-col gap-2 mx-auto overflow-y-auto ">
