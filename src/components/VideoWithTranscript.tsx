@@ -1,13 +1,14 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Video } from "../typings/Video";
 import TranscriptItemView from "./TranscriptItemView";
 import EmbeddedVideo, { useEmbeddedVideoController } from "./EmbeddedVideo";
-import smoothScrollTo from "gatsby-plugin-smoothscroll";
-import { useHash } from "react-use";
+import useActiveItemId from "../hooks/useActiveItemId";
+import { useSetPlaybackTimeFromLocationHash } from "../hooks/useSetPlaybackTimeFromLocationHash";
+import { useScrollToActiveItem } from "../hooks/useScrollToActiveItem";
 
 // Check if window is defined (so if in the browser or in node.js).
-const isBrowser = typeof window !== "undefined";
+export const isBrowser = typeof window !== "undefined";
 
 type Props = {
   video: Video;
@@ -15,44 +16,11 @@ type Props = {
 
 export default function VideoWithTranscript({ video }: Props) {
   const { transcript, youtubeSlug } = video;
-  const [activeItemId, setActiveItemId] = useState<string | undefined>();
   const { playbackTime, setPlaybackTime, controller } =
     useEmbeddedVideoController();
-  const [hash, _] = isBrowser ? useHash() : ["", null];
-
-  useEffect(() => {
-    if (hash.length > 1) {
-      const initialActiveItemId = hash.substring(1);
-      const initialActiveItem = transcript.find(
-        (item) => item.id === initialActiveItemId
-      );
-
-      if (initialActiveItem == null) {
-        return;
-      }
-
-      setPlaybackTime(initialActiveItem.startOffset, true);
-    }
-  }, [setPlaybackTime, hash]);
-
-  useEffect(() => {
-    const activeItem =
-      playbackTime == null
-        ? null
-        : transcript.find(
-            (item) =>
-              playbackTime >= item.graceStartOffset &&
-              playbackTime < item.graceEndOffset
-          );
-
-    setActiveItemId(activeItem?.id);
-  }, [playbackTime]);
-
-  useEffect(() => {
-    if (activeItemId != null) {
-      scrollTo(activeItemId);
-    }
-  }, [activeItemId]);
+  const activeItemId = useActiveItemId(transcript, playbackTime);
+  useSetPlaybackTimeFromLocationHash(transcript, setPlaybackTime);
+  useScrollToActiveItem(activeItemId);
 
   return (
     <div className="w-full max-h-full flex flex-col gap-2 wide:flex-row wide:my-auto">
@@ -69,8 +37,4 @@ export default function VideoWithTranscript({ video }: Props) {
       </div>
     </div>
   );
-}
-
-function scrollTo(hash: string) {
-  smoothScrollTo(`#${CSS.escape(hash)}`);
 }
