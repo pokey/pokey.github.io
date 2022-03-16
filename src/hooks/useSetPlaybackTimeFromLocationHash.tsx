@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { TranscriptItem } from "../typings/Video";
 import { useHash } from "react-use";
-import { isBrowser } from "../components/VideoWithTranscript";
+
+// Check if window is defined (so if in the browser or in node.js).
+const isBrowser = typeof window !== "undefined";
 
 export function useSetPlaybackTimeFromLocationHash(
   transcript: TranscriptItem[],
@@ -11,16 +13,14 @@ export function useSetPlaybackTimeFromLocationHash(
 
   useEffect(() => {
     if (hash.length > 1) {
-      const initialActiveItemId = hash.substring(1);
-      const initialActiveItem = transcript.find(
-        (item) => item.id === initialActiveItemId
-      );
+      const activeItemId = hash.substring(1);
+      const activeItem = transcript.find((item) => item.id === activeItemId);
 
-      if (initialActiveItem == null) {
+      if (activeItem == null) {
         return;
       }
 
-      setPlaybackTime(initialActiveItem.startOffset, true);
+      setPlaybackTime(activeItem.startOffset, true);
     }
   }, [setPlaybackTime, hash]);
 }

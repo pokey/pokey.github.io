@@ -1,14 +1,10 @@
 import React from "react";
-import { useState } from "react";
-import { Video } from "../typings/Video";
-import TranscriptItemView from "./TranscriptItemView";
-import EmbeddedVideo, { useEmbeddedVideoController } from "./EmbeddedVideo";
 import useActiveItemId from "../hooks/useActiveItemId";
-import { useSetPlaybackTimeFromLocationHash } from "../hooks/useSetPlaybackTimeFromLocationHash";
 import { useScrollToActiveItem } from "../hooks/useScrollToActiveItem";
-
-// Check if window is defined (so if in the browser or in node.js).
-export const isBrowser = typeof window !== "undefined";
+import { useSetPlaybackTimeFromLocationHash } from "../hooks/useSetPlaybackTimeFromLocationHash";
+import { Video } from "../typings/Video";
+import EmbeddedVideo, { useEmbeddedVideoController } from "./EmbeddedVideo";
+import TranscriptItemView from "./TranscriptItemView";
 
 type Props = {
   video: Video;
