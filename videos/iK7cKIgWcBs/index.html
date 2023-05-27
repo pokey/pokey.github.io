@@ -1,0 +1,754 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.8.0"/><style data-href="/styles.f4c9bf5eada0774d7886.css" data-identity="gatsby-global-css">/*
+! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*{scrollbar-color:auto;scrollbar-width:auto}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.bottom-0{bottom:0}.left-0{left:0}.right-0{right:0}.my-\[2px\]{margin-bottom:2px;margin-top:2px}.mx-auto{margin-left:auto;margin-right:auto}.mr-1{margin-right:.25rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.h-full{height:100%}.max-h-full{max-height:100%}.w-full{width:100%}.max-w-prose{max-width:65ch}.max-w-xl{max-width:36rem}.flex-col{flex-direction:column}.gap-2{gap:.5rem}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:.25rem}.border-2{border-width:2px}.border{border-width:1px}.border-purple-400{--tw-border-opacity:1;border-color:rgb(192 132 252/var(--tw-border-opacity))}.bg-stone-200{--tw-bg-opacity:1;background-color:rgb(231 229 228/var(--tw-bg-opacity))}.bg-stone-300{--tw-bg-opacity:1;background-color:rgb(214 211 209/var(--tw-bg-opacity))}.bg-stone-100{--tw-bg-opacity:1;background-color:rgb(245 245 244/var(--tw-bg-opacity))}.p-2{padding:.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-\[2px\]{padding-left:2px;padding-right:2px}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.text-stone-600{--tw-text-opacity:1;color:rgb(87 83 78/var(--tw-text-opacity))}.text-purple-800{--tw-text-opacity:1;color:rgb(107 33 168/var(--tw-text-opacity))}.text-stone-800{--tw-text-opacity:1;color:rgb(41 37 36/var(--tw-text-opacity))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity))}.hover\:bg-blue-300:hover{--tw-bg-opacity:1;background-color:rgb(147 197 253/var(--tw-bg-opacity))}.hover\:text-purple-500:hover{--tw-text-opacity:1;color:rgb(168 85 247/var(--tw-text-opacity))}@media (prefers-color-scheme:dark){.dark\:border-purple-600{--tw-border-opacity:1;border-color:rgb(147 51 234/var(--tw-border-opacity))}.dark\:bg-stone-800{--tw-bg-opacity:1;background-color:rgb(41 37 36/var(--tw-bg-opacity))}.dark\:bg-stone-700{--tw-bg-opacity:1;background-color:rgb(68 64 60/var(--tw-bg-opacity))}.dark\:bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.dark\:text-stone-400{--tw-text-opacity:1;color:rgb(168 162 158/var(--tw-text-opacity))}.dark\:text-purple-500{--tw-text-opacity:1;color:rgb(168 85 247/var(--tw-text-opacity))}.dark\:text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234/var(--tw-text-opacity))}.dark\:text-stone-200{--tw-text-opacity:1;color:rgb(231 229 228/var(--tw-text-opacity))}.dark\:text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250/var(--tw-text-opacity))}.dark\:hover\:text-purple-300:hover{--tw-text-opacity:1;color:rgb(216 180 254/var(--tw-text-opacity))}}@media (min-aspect-ratio:7/5){.wide\:my-auto{margin-bottom:auto;margin-top:auto}.wide\:mx-auto{margin-left:auto;margin-right:auto}.wide\:h-full{height:100%}.wide\:max-w-\[260vh\]{max-width:260vh}.wide\:max-w-none{max-width:none}.wide\:flex-\[2\]{flex:2}.wide\:flex-1{flex:1 1 0%}.wide\:flex-row{flex-direction:row}}.EmbeddedVideo-module--embedContainer--4My8d{height:0;max-width:100%;overflow:hidden;padding-bottom:56.25%;position:relative}.EmbeddedVideo-module--embedContainer--4My8d embed,.EmbeddedVideo-module--embedContainer--4My8d iframe,.EmbeddedVideo-module--embedContainer--4My8d object{height:100%;left:0;position:absolute;top:0;width:100%}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true"></title><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><link rel="icon" href="/favicon-32x32.png?v=720f42115b6daf6900f20dcb0dfdbdef" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=720f42115b6daf6900f20dcb0dfdbdef"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=720f42115b6daf6900f20dcb0dfdbdef"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=720f42115b6daf6900f20dcb0dfdbdef"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=720f42115b6daf6900f20dcb0dfdbdef"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=720f42115b6daf6900f20dcb0dfdbdef"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=720f42115b6daf6900f20dcb0dfdbdef"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=720f42115b6daf6900f20dcb0dfdbdef"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=720f42115b6daf6900f20dcb0dfdbdef"/><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link as="script" rel="preload" href="/webpack-runtime-4b4d0f91148dea84a0d7.js"/><link as="script" rel="preload" href="/framework-99e33940d15df3440d02.js"/><link as="script" rel="preload" href="/app-b78ce4b95c5d4ffb1411.js"/><link as="script" rel="preload" href="/component---src-pages-videos-videos-json-youtube-slug-tsx-d6d83789f69569d8415c.js"/><link as="fetch" rel="preload" href="/page-data/videos/iK7cKIgWcBs/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body class="bg-stone-100 dark:bg-black "><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main class="fixed top-0 bottom-0 left-0 right-0 dark:text-stone-200"><div class="h-full wide:max-w-[260vh] wide:mx-auto"><div class="h-full p-2 max-w-xl wide:max-w-none flex flex-col mx-auto"><title>Query allow multiple</title><div class="w-full max-h-full flex flex-col gap-2 wide:flex-row wide:my-auto"><div class="wide:flex-[2] "><div class="EmbeddedVideo-module--embedContainer--4My8d"><div></div></div></div><div class="wide:flex-1 wide:h-full flex flex-col gap-2 mx-auto overflow-y-auto "><a id="2dfcdcb8-937b-434d-ae0d-f58a2ac8bded" href="#2dfcdcb8-937b-434d-ae0d-f58a2ac8bded" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#2dfcdcb8-937b-434d-ae0d-f58a2ac8bded">0:35</a></span><span>debug stench</span></h3></a><a id="5c743a92-caef-418b-96be-cd47f03cb895" href="#5c743a92-caef-418b-96be-cd47f03cb895" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#5c743a92-caef-418b-96be-cd47f03cb895">0:47</a></span><span>please mode clap</span></h3></a><a id="854555d6-da17-4961-b0c8-d31082a3f110" href="#854555d6-da17-4961-b0c8-d31082a3f110" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#854555d6-da17-4961-b0c8-d31082a3f110">0:49</a></span><span>flay</span></h3></a><a id="7b0f3f5a-236c-432c-a17d-af072d03b28a" href="#7b0f3f5a-236c-432c-a17d-af072d03b28a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7b0f3f5a-236c-432c-a17d-af072d03b28a">0:51</a></span><span>mode html</span></h3></a><a id="1587e6ed-2136-4f1b-815c-c52c6173704b" href="#1587e6ed-2136-4f1b-815c-c52c6173704b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1587e6ed-2136-4f1b-815c-c52c6173704b">0:55</a></span><span>diamond word whatever</span></h3></a><a id="5ff13ae3-ae6c-48f4-a728-7dad33a914b6" href="#5ff13ae3-ae6c-48f4-a728-7dad33a914b6" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#5ff13ae3-ae6c-48f4-a728-7dad33a914b6">0:58</a></span><span>push</span></h3></a><a id="63dfdd48-a225-48e7-ba3d-8fb2d093f52a" href="#63dfdd48-a225-48e7-ba3d-8fb2d093f52a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#63dfdd48-a225-48e7-ba3d-8fb2d093f52a">1:02</a></span><span>diamond stroke word whatever</span></h3></a><a id="9b0b939e-216e-46fc-b351-d1e559d97873" href="#9b0b939e-216e-46fc-b351-d1e559d97873" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9b0b939e-216e-46fc-b351-d1e559d97873">1:06</a></span><span>post wrangle word hello</span></h3></a><a id="3c52d939-3d97-4f34-898d-58a9919f753f" href="#3c52d939-3d97-4f34-898d-58a9919f753f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#3c52d939-3d97-4f34-898d-58a9919f753f">1:09</a></span><span>tug</span></h3></a><a id="fe69dca4-778f-4870-89c6-543a5a48759f" href="#fe69dca4-778f-4870-89c6-543a5a48759f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#fe69dca4-778f-4870-89c6-543a5a48759f">1:15</a></span><span>take tags</span></h3></a><a id="8bf71e8c-61b0-498a-b0c0-65e4dd9fc475" href="#8bf71e8c-61b0-498a-b0c0-65e4dd9fc475" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#8bf71e8c-61b0-498a-b0c0-65e4dd9fc475">1:33</a></span><span>curse undo</span></h3></a><a id="475577c2-4b02-446b-9c6b-e1a4240e3ecd" href="#475577c2-4b02-446b-9c6b-e1a4240e3ecd" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#475577c2-4b02-446b-9c6b-e1a4240e3ecd">1:42</a></span><span>change last</span></h3></a><a id="168893f8-4d9a-4437-833b-afaa67df7c4b" href="#168893f8-4d9a-4437-833b-afaa67df7c4b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#168893f8-4d9a-4437-833b-afaa67df7c4b">1:52</a></span><span>clear name tags</span></h3></a><a id="a2450b37-0643-4473-9ee1-4ad1324525e9" href="#a2450b37-0643-4473-9ee1-4ad1324525e9" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a2450b37-0643-4473-9ee1-4ad1324525e9">2:32</a></span><span>many brick</span></h3></a><a id="283d13c0-af2b-401a-93e9-ec81ea8df43d" href="#283d13c0-af2b-401a-93e9-ec81ea8df43d" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#283d13c0-af2b-401a-93e9-ec81ea8df43d">3:11</a></span><span>debug stopper</span></h3></a><a id="e9217ab7-831f-4b29-86a3-891b97e29dd4" href="#e9217ab7-831f-4b29-86a3-891b97e29dd4" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#e9217ab7-831f-4b29-86a3-891b97e29dd4">3:16</a></span><span>list dock scope</span></h3></a><a id="1f465ee5-a107-4250-8085-9989a963f416" href="#1f465ee5-a107-4250-8085-9989a963f416" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1f465ee5-a107-4250-8085-9989a963f416">3:22</a></span><span>choose four</span></h3></a><a id="6b99dd96-d635-4594-a6b7-feb38b975c33" href="#6b99dd96-d635-4594-a6b7-feb38b975c33" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#6b99dd96-d635-4594-a6b7-feb38b975c33">3:26</a></span><span>pageup</span></h3></a><a id="449ddd41-ad11-41e5-981c-9fa98325176a" href="#449ddd41-ad11-41e5-981c-9fa98325176a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#449ddd41-ad11-41e5-981c-9fa98325176a">3:31</a></span><span>falling red gust</span></h3></a><a id="027c8ec6-b1cf-45ff-ab6c-8e7145a58489" href="#027c8ec6-b1cf-45ff-ab6c-8e7145a58489" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#027c8ec6-b1cf-45ff-ab6c-8e7145a58489">3:35</a></span><span>go to sleep this is a notion of a scope right so this is basically like a region like a function alone whatever is it sort of the generic definition of that and as you can see we get a bunch of these scopes and then you can actually grab the target from the scope so for example file</span></h3></a><a id="045fa8cc-146f-4a93-93e2-ad12dd12ca60" href="#045fa8cc-146f-4a93-93e2-ad12dd12ca60" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#045fa8cc-146f-4a93-93e2-ad12dd12ca60">4:00</a></span><span>pre risk</span></h3></a><a id="a2578c01-506a-452a-a65e-3ae4f9505549" href="#a2578c01-506a-452a-a65e-3ae4f9505549" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a2578c01-506a-452a-a65e-3ae4f9505549">4:36</a></span><span>post car gust</span></h3></a><a id="c70d3330-2a15-47c1-9658-8f8a1b13b246" href="#c70d3330-2a15-47c1-9658-8f8a1b13b246" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c70d3330-2a15-47c1-9658-8f8a1b13b246">4:40</a></span><span>cross</span></h3></a><a id="4a445371-29e1-4f59-8a16-21ce4e78cba6" href="#4a445371-29e1-4f59-8a16-21ce4e78cba6" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#4a445371-29e1-4f59-8a16-21ce4e78cba6">4:41</a></span><span>rename star gust</span></h3></a><a id="059d675c-49e6-46d1-b94c-b8a4ecdf92cb" href="#059d675c-49e6-46d1-b94c-b8a4ecdf92cb" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#059d675c-49e6-46d1-b94c-b8a4ecdf92cb">4:44</a></span><span>push spun clap</span></h3></a><a id="3a445244-fc78-4e37-8256-16a8594b3430" href="#3a445244-fc78-4e37-8256-16a8594b3430" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#3a445244-fc78-4e37-8256-16a8594b3430">5:42</a></span><span>scout risk</span></h3></a><a id="9542461d-6c5b-4021-bf4f-d73a27ed9e6f" href="#9542461d-6c5b-4021-bf4f-d73a27ed9e6f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9542461d-6c5b-4021-bf4f-d73a27ed9e6f">5:46</a></span><span>scout all risk</span></h3></a><a id="67b2fd1f-739b-401e-8f33-f32adf75a4ee" href="#67b2fd1f-739b-401e-8f33-f32adf75a4ee" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#67b2fd1f-739b-401e-8f33-f32adf75a4ee">5:51</a></span><span>scratcher</span></h3></a><a id="28a1bd5f-eb27-44d9-ae73-a5113d107326" href="#28a1bd5f-eb27-44d9-ae73-a5113d107326" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#28a1bd5f-eb27-44d9-ae73-a5113d107326">5:53</a></span><span>scratch</span></h3></a><a id="f736744f-4ea2-4e00-9366-f97824df8d00" href="#f736744f-4ea2-4e00-9366-f97824df8d00" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#f736744f-4ea2-4e00-9366-f97824df8d00">6:12</a></span><span>camel get targets</span></h3></a><a id="395ae66c-46de-4ff5-8804-9140829859ce" href="#395ae66c-46de-4ff5-8804-9140829859ce" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#395ae66c-46de-4ff5-8804-9140829859ce">6:15</a></span><span>many option clap</span></h3></a><a id="7427c57d-2297-4acf-a31c-0d0d7a8a8b99" href="#7427c57d-2297-4acf-a31c-0d0d7a8a8b99" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7427c57d-2297-4acf-a31c-0d0d7a8a8b99">6:17</a></span><span>clap</span></h3></a><a id="64937bea-372d-4c39-b51b-d4989dd486c5" href="#64937bea-372d-4c39-b51b-d4989dd486c5" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#64937bea-372d-4c39-b51b-d4989dd486c5">6:19</a></span><span>clap</span></h3></a><a id="6e23f68a-df56-475e-8935-5f1a105453be" href="#6e23f68a-df56-475e-8935-5f1a105453be" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#6e23f68a-df56-475e-8935-5f1a105453be">6:30</a></span><span>tab close</span></h3></a><a id="32b8d024-fa9f-427e-a953-54ead26969a5" href="#32b8d024-fa9f-427e-a953-54ead26969a5" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#32b8d024-fa9f-427e-a953-54ead26969a5">6:33</a></span><span>typescript restart</span></h3></a><a id="a9c616b6-97ca-443a-a52c-f462cd6a437c" href="#a9c616b6-97ca-443a-a52c-f462cd6a437c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a9c616b6-97ca-443a-a52c-f462cd6a437c">6:51</a></span><span>pop last zen mode</span></h3></a><a id="c2065760-647d-454b-8e01-29eb0efd7cba" href="#c2065760-647d-454b-8e01-29eb0efd7cba" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c2065760-647d-454b-8e01-29eb0efd7cba">6:54</a></span><span>pop last</span></h3></a><a id="7883cbfd-0894-4756-ab40-789956e35972" href="#7883cbfd-0894-4756-ab40-789956e35972" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7883cbfd-0894-4756-ab40-789956e35972">6:59</a></span><span>post star each square</span></h3></a><a id="a8d8d856-aca6-416a-b4dd-b39b41adcdd7" href="#a8d8d856-aca6-416a-b4dd-b39b41adcdd7" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a8d8d856-aca6-416a-b4dd-b39b41adcdd7">7:02</a></span><span>disk</span></h3></a><a id="47816193-4dac-4685-b3f6-b13f37368f27" href="#47816193-4dac-4685-b3f6-b13f37368f27" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#47816193-4dac-4685-b3f6-b13f37368f27">7:13</a></span><span>problem next</span></h3></a><a id="534ea16d-4b25-4dc6-b989-aaa936d50826" href="#534ea16d-4b25-4dc6-b989-aaa936d50826" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#534ea16d-4b25-4dc6-b989-aaa936d50826">7:16</a></span><span>cross flay cross</span></h3></a><a id="2fb3716b-80dc-4c6f-9ca7-c71a600d55fc" href="#2fb3716b-80dc-4c6f-9ca7-c71a600d55fc" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#2fb3716b-80dc-4c6f-9ca7-c71a600d55fc">7:19</a></span><span>tab close</span></h3></a><a id="86a35c05-9b9a-459d-ba1e-27029516acdb" href="#86a35c05-9b9a-459d-ba1e-27029516acdb" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#86a35c05-9b9a-459d-ba1e-27029516acdb">7:22</a></span><span>problem next</span></h3></a><a id="141e78f4-144d-4ac4-ae97-6d1a0111460f" href="#141e78f4-144d-4ac4-ae97-6d1a0111460f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#141e78f4-144d-4ac4-ae97-6d1a0111460f">7:38</a></span><span>center funk</span></h3></a><a id="0197791e-73e2-4c2e-b0ed-036655673b31" href="#0197791e-73e2-4c2e-b0ed-036655673b31" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#0197791e-73e2-4c2e-b0ed-036655673b31">7:43</a></span><span>center line</span></h3></a><a id="161d3f95-ee88-4ea5-9832-f0c0c438703f" href="#161d3f95-ee88-4ea5-9832-f0c0c438703f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#161d3f95-ee88-4ea5-9832-f0c0c438703f">8:03</a></span><span>pre made word flat</span></h3></a><a id="9e7b8691-9764-4795-a2e2-84bc99c15c85" href="#9e7b8691-9764-4795-a2e2-84bc99c15c85" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9e7b8691-9764-4795-a2e2-84bc99c15c85">8:06</a></span><span>drill ship made</span></h3></a><a id="3a5cf3ef-7f15-498c-bc9b-410c48082b7c" href="#3a5cf3ef-7f15-498c-bc9b-410c48082b7c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#3a5cf3ef-7f15-498c-bc9b-410c48082b7c">8:14</a></span><span>problem next</span></h3></a><a id="0d36f668-9133-4c94-9f84-69a25e536933" href="#0d36f668-9133-4c94-9f84-69a25e536933" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#0d36f668-9133-4c94-9f84-69a25e536933">8:52</a></span><span>chuck bounding disk problem next</span></h3></a><a id="4961c70e-fe57-4d59-9d36-bda198c698e0" href="#4961c70e-fe57-4d59-9d36-bda198c698e0" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#4961c70e-fe57-4d59-9d36-bda198c698e0">9:09</a></span><span>bottom funk</span></h3></a><a id="ed5c3895-126d-4dbd-985c-88ee4c0a58bf" href="#ed5c3895-126d-4dbd-985c-88ee4c0a58bf" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#ed5c3895-126d-4dbd-985c-88ee4c0a58bf">9:27</a></span><span>reference funk name</span></h3></a><a id="832869a6-5afc-4d66-a2a5-134d9b7e4285" href="#832869a6-5afc-4d66-a2a5-134d9b7e4285" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#832869a6-5afc-4d66-a2a5-134d9b7e4285">10:29</a></span><span>cross</span></h3></a><a id="bbb51b53-9c9d-420d-9288-664bf1c961b4" href="#bbb51b53-9c9d-420d-9288-664bf1c961b4" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#bbb51b53-9c9d-420d-9288-664bf1c961b4">10:32</a></span><span>list dock action</span></h3></a><a id="dbd2649d-adea-4099-9dc9-a28bad312131" href="#dbd2649d-adea-4099-9dc9-a28bad312131" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#dbd2649d-adea-4099-9dc9-a28bad312131">10:36</a></span><span>clap</span></h3></a><a id="f1234ee3-cc5d-4ffe-9401-4a190d0587f1" href="#f1234ee3-cc5d-4ffe-9401-4a190d0587f1" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#f1234ee3-cc5d-4ffe-9401-4a190d0587f1">10:41</a></span><span>pagedown</span></h3></a><a id="5287b796-ac75-4c4d-bf28-0411dba436fe" href="#5287b796-ac75-4c4d-bf28-0411dba436fe" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#5287b796-ac75-4c4d-bf28-0411dba436fe">11:02</a></span><span>take funk</span></h3></a><a id="7ad2eda9-dc8f-4fcb-9767-e84d1ba9bc9c" href="#7ad2eda9-dc8f-4fcb-9767-e84d1ba9bc9c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7ad2eda9-dc8f-4fcb-9767-e84d1ba9bc9c">12:44</a></span><span>falling play pit zen mode</span></h3></a><a id="859b040d-f5d7-4d8c-b72b-17a3c75eb644" href="#859b040d-f5d7-4d8c-b72b-17a3c75eb644" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#859b040d-f5d7-4d8c-b72b-17a3c75eb644">13:38</a></span><span>post play trap square</span></h3></a><a id="2eb5c3a4-5904-4529-829b-b77125707fae" href="#2eb5c3a4-5904-4529-829b-b77125707fae" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#2eb5c3a4-5904-4529-829b-b77125707fae">14:26</a></span><span>tug spun</span></h3></a><a id="8ce98aca-37b6-4f75-b0bb-ea238bf7eb0d" href="#8ce98aca-37b6-4f75-b0bb-ea238bf7eb0d" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#8ce98aca-37b6-4f75-b0bb-ea238bf7eb0d">14:40</a></span><span>snip let after block being at ring ex risk</span></h3></a><a id="5219193a-d5ee-4f64-b912-02e37e6d1686" href="#5219193a-d5ee-4f64-b912-02e37e6d1686" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#5219193a-d5ee-4f64-b912-02e37e6d1686">14:44</a></span><span>nope</span></h3></a><a id="c319a30d-e725-4325-823e-4f0e0b6f6916" href="#c319a30d-e725-4325-823e-4f0e0b6f6916" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c319a30d-e725-4325-823e-4f0e0b6f6916">14:48</a></span><span>snip with after block bring air point word length is equal numb one</span></h3></a><a id="7fcece76-259e-424d-ab56-d6cdaef2ff1f" href="#7fcece76-259e-424d-ab56-d6cdaef2ff1f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7fcece76-259e-424d-ab56-d6cdaef2ff1f">15:02</a></span><span>snip if bring car chain length is equal</span></h3></a><a id="971c7c05-2e8f-4dd7-8653-1c50f9092269" href="#971c7c05-2e8f-4dd7-8653-1c50f9092269" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#971c7c05-2e8f-4dd7-8653-1c50f9092269">15:10</a></span><span>nope</span></h3></a><a id="0d5d85ce-06e1-4c92-b8d5-b0d1a10c3b70" href="#0d5d85ce-06e1-4c92-b8d5-b0d1a10c3b70" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#0d5d85ce-06e1-4c92-b8d5-b0d1a10c3b70">15:36</a></span><span>bring cross air chain length is not equal numb one make or bring cross risk</span></h3></a><a id="1b5b1617-6dd3-46e1-99ea-afecb79af3de" href="#1b5b1617-6dd3-46e1-99ea-afecb79af3de" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1b5b1617-6dd3-46e1-99ea-afecb79af3de">15:46</a></span><span>is not equal numb one next make throw proud error</span></h3></a><a id="5d0b0c4d-fc95-48c6-a584-9c60812eaf07" href="#5d0b0c4d-fc95-48c6-a584-9c60812eaf07" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#5d0b0c4d-fc95-48c6-a584-9c60812eaf07">15:53</a></span><span>yes</span></h3></a><a id="a29e172d-91a1-4ce3-8e68-5186c942d111" href="#a29e172d-91a1-4ce3-8e68-5186c942d111" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a29e172d-91a1-4ce3-8e68-5186c942d111">16:02</a></span><span>bring block cross air after this</span></h3></a><a id="ac1677d8-494f-4942-ad2d-bb892c1c18eb" href="#ac1677d8-494f-4942-ad2d-bb892c1c18eb" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#ac1677d8-494f-4942-ad2d-bb892c1c18eb">16:19</a></span><span>chuck last car first word ears each and yellow gust</span></h3></a><a id="853aa043-3556-4fb3-8eee-8292fc20c55a" href="#853aa043-3556-4fb3-8eee-8292fc20c55a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#853aa043-3556-4fb3-8eee-8292fc20c55a">16:27</a></span><span>square wrap that post that clear value bring cross air and cross risk</span></h3></a><a id="839e483b-54e9-48f6-ae6e-809ba60883cb" href="#839e483b-54e9-48f6-ae6e-809ba60883cb" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#839e483b-54e9-48f6-ae6e-809ba60883cb">16:53</a></span><span>bring cross air and cross risk</span></h3></a><a id="7fea9bf4-e17a-45e8-8d4b-bc92fb396eee" href="#7fea9bf4-e17a-45e8-8d4b-bc92fb396eee" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7fea9bf4-e17a-45e8-8d4b-bc92fb396eee">17:02</a></span><span>bring tail paint box point after box two disk</span></h3></a><a id="608e14d7-879c-41c5-9640-5894c1a80420" href="#608e14d7-879c-41c5-9640-5894c1a80420" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#608e14d7-879c-41c5-9640-5894c1a80420">17:20</a></span><span>square wrap value blue spun disk problem next</span></h3></a><a id="7a021c2c-e871-4542-b55e-437375db3b73" href="#7a021c2c-e871-4542-b55e-437375db3b73" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7a021c2c-e871-4542-b55e-437375db3b73">17:46</a></span><span>post type</span></h3></a><a id="d4b0c782-f18c-477b-b9fe-f334172cc03c" href="#d4b0c782-f18c-477b-b9fe-f334172cc03c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d4b0c782-f18c-477b-b9fe-f334172cc03c">17:52</a></span><span>post trap square disk</span></h3></a><a id="13b9d14b-458e-48f6-a4be-a37677ccce15" href="#13b9d14b-458e-48f6-a4be-a37677ccce15" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#13b9d14b-458e-48f6-a4be-a37677ccce15">17:55</a></span><span>nope</span></h3></a><a id="3dd47776-4ffa-45f0-baca-e1a76cbd212c" href="#3dd47776-4ffa-45f0-baca-e1a76cbd212c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#3dd47776-4ffa-45f0-baca-e1a76cbd212c">17:57</a></span><span>post cross trap square disk</span></h3></a><a id="511e4571-6adf-441f-b5f1-b22db4a7b57e" href="#511e4571-6adf-441f-b5f1-b22db4a7b57e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#511e4571-6adf-441f-b5f1-b22db4a7b57e">18:23</a></span><span>problem next</span></h3></a><a id="e8543ab1-5b71-4de5-a024-5e53dd5d1108" href="#e8543ab1-5b71-4de5-a024-5e53dd5d1108" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#e8543ab1-5b71-4de5-a024-5e53dd5d1108">18:26</a></span><span>center funk</span></h3></a><a id="3a3ee930-0be8-4a0f-8526-33f6e1389216" href="#3a3ee930-0be8-4a0f-8526-33f6e1389216" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#3a3ee930-0be8-4a0f-8526-33f6e1389216">19:04</a></span><span>square wrap apple whale disk</span></h3></a><a id="9331803b-5f3f-4bbb-a9fd-bca72bfe70c2" href="#9331803b-5f3f-4bbb-a9fd-bca72bfe70c2" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9331803b-5f3f-4bbb-a9fd-bca72bfe70c2">19:15</a></span><span>problem next</span></h3></a><a id="e8086fbd-142c-4e8b-9815-2b2a2089cdad" href="#e8086fbd-142c-4e8b-9815-2b2a2089cdad" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#e8086fbd-142c-4e8b-9815-2b2a2089cdad">19:20</a></span><span>tab close problem next</span></h3></a><a id="e422563c-d2d0-44a4-b450-8e27399919f6" href="#e422563c-d2d0-44a4-b450-8e27399919f6" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#e422563c-d2d0-44a4-b450-8e27399919f6">19:36</a></span><span>center funk</span></h3></a><a id="fcd349fd-e639-4710-9716-150b5338d49f" href="#fcd349fd-e639-4710-9716-150b5338d49f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#fcd349fd-e639-4710-9716-150b5338d49f">19:40</a></span><span>crown funk</span></h3></a><a id="0e42875a-a905-45d4-af85-bea9dd8534b6" href="#0e42875a-a905-45d4-af85-bea9dd8534b6" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#0e42875a-a905-45d4-af85-bea9dd8534b6">20:03</a></span><span>pre box spun</span></h3></a><a id="2f359730-6d58-45d9-8dbd-90b680423d3c" href="#2f359730-6d58-45d9-8dbd-90b680423d3c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#2f359730-6d58-45d9-8dbd-90b680423d3c">20:06</a></span><span>push</span></h3></a><a id="1c99bf26-a97f-451d-9e3a-bfe6ee40419f" href="#1c99bf26-a97f-451d-9e3a-bfe6ee40419f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1c99bf26-a97f-451d-9e3a-bfe6ee40419f">20:52</a></span><span>step square numb zero disk problem next</span></h3></a><a id="c12b9814-0d60-4de0-99db-a034eefbf2d0" href="#c12b9814-0d60-4de0-99db-a034eefbf2d0" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c12b9814-0d60-4de0-99db-a034eefbf2d0">21:15</a></span><span>chuck bounding disk problem next</span></h3></a><a id="6350952f-735e-4cba-9e06-291187a90235" href="#6350952f-735e-4cba-9e06-291187a90235" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#6350952f-735e-4cba-9e06-291187a90235">21:34</a></span><span>center funk</span></h3></a><a id="4c0dcf9f-e0f7-4993-b446-65f1eb2615ec" href="#4c0dcf9f-e0f7-4993-b446-65f1eb2615ec" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#4c0dcf9f-e0f7-4993-b446-65f1eb2615ec">22:12</a></span><span>pre every funk</span></h3></a><a id="807f1a2f-b7d1-49eb-a3b3-b3764ba31f19" href="#807f1a2f-b7d1-49eb-a3b3-b3764ba31f19" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#807f1a2f-b7d1-49eb-a3b3-b3764ba31f19">22:42</a></span><span>pre ears stack</span></h3></a><a id="05789fab-a084-489f-b5db-65bdcadeab56" href="#05789fab-a084-489f-b5db-65bdcadeab56" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#05789fab-a084-489f-b5db-65bdcadeab56">22:47</a></span><span>pre every token</span></h3></a><a id="9ac4b163-1c5d-40ca-be3c-13bc5a2a6967" href="#9ac4b163-1c5d-40ca-be3c-13bc5a2a6967" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9ac4b163-1c5d-40ca-be3c-13bc5a2a6967">23:27</a></span><span>pre blue near square post cap chain map snip lambda range</span></h3></a><a id="f207c0e5-ceeb-4096-be13-74775c3553be" href="#f207c0e5-ceeb-4096-be13-74775c3553be" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#f207c0e5-ceeb-4096-be13-74775c3553be">23:35</a></span><span>clear box risk word target pre core repper</span></h3></a><a id="91de1b40-2e75-4943-884a-fdf90db06e1b" href="#91de1b40-2e75-4943-884a-fdf90db06e1b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#91de1b40-2e75-4943-884a-fdf90db06e1b">24:26</a></span><span>move two clicks blue lacker after just blue gust</span></h3></a><a id="83f424cd-bed5-4116-a5c5-e501392dfdd8" href="#83f424cd-bed5-4116-a5c5-e501392dfdd8" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#83f424cd-bed5-4116-a5c5-e501392dfdd8">24:31</a></span><span>disk</span></h3></a><a id="317f2f92-eebc-4478-843c-0783b6feb414" href="#317f2f92-eebc-4478-843c-0783b6feb414" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#317f2f92-eebc-4478-843c-0783b6feb414">24:35</a></span><span>problem next</span></h3></a><a id="ac68cbb7-766d-4639-9fc7-8716b687a418" href="#ac68cbb7-766d-4639-9fc7-8716b687a418" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#ac68cbb7-766d-4639-9fc7-8716b687a418">24:57</a></span><span>flay</span></h3></a><a id="b15f6dd8-b399-43f0-8210-ab22eb1ba943" href="#b15f6dd8-b399-43f0-8210-ab22eb1ba943" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#b15f6dd8-b399-43f0-8210-ab22eb1ba943">25:03</a></span><span>carve argue camel iteration range lambda wrap value</span></h3></a><a id="db8301fc-e98c-46f6-b1e3-56406b4bef80" href="#db8301fc-e98c-46f6-b1e3-56406b4bef80" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#db8301fc-e98c-46f6-b1e3-56406b4bef80">25:54</a></span><span>clear line blue equal</span></h3></a><a id="4893eb9b-36a9-4a2d-8df0-26169838662b" href="#4893eb9b-36a9-4a2d-8df0-26169838662b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#4893eb9b-36a9-4a2d-8df0-26169838662b">26:02</a></span><span>nope</span></h3></a><a id="a47a0d7a-f285-4445-b0b3-4e62126e43fb" href="#a47a0d7a-f285-4445-b0b3-4e62126e43fb" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a47a0d7a-f285-4445-b0b3-4e62126e43fb">26:04</a></span><span>chuck line blue equal</span></h3></a><a id="87cffdae-b0a7-4194-8036-74e63f2bbce6" href="#87cffdae-b0a7-4194-8036-74e63f2bbce6" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#87cffdae-b0a7-4194-8036-74e63f2bbce6">26:48</a></span><span>nope</span></h3></a><a id="395bbeae-f24b-46a6-8f47-67308a0886a9" href="#395bbeae-f24b-46a6-8f47-67308a0886a9" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#395bbeae-f24b-46a6-8f47-67308a0886a9">27:20</a></span><span>carve apple</span></h3></a><a id="eae2b0fc-e61d-4833-9964-3ad50ff08fe0" href="#eae2b0fc-e61d-4833-9964-3ad50ff08fe0" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#eae2b0fc-e61d-4833-9964-3ad50ff08fe0">27:28</a></span><span>camel iteration range lambda wrap value</span></h3></a><a id="09230892-020b-4ef9-8ce7-35ffc0f91af7" href="#09230892-020b-4ef9-8ce7-35ffc0f91af7" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#09230892-020b-4ef9-8ce7-35ffc0f91af7">27:33</a></span><span>paste that</span></h3></a><a id="c2f64f04-5d5a-4c59-a44b-d58d352c6df0" href="#c2f64f04-5d5a-4c59-a44b-d58d352c6df0" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c2f64f04-5d5a-4c59-a44b-d58d352c6df0">27:37</a></span><span>nope</span></h3></a><a id="f4feb2de-73d9-4115-9e7c-e338c841f95c" href="#f4feb2de-73d9-4115-9e7c-e338c841f95c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#f4feb2de-73d9-4115-9e7c-e338c841f95c">27:42</a></span><span>round wrap value pre that paste that chain map</span></h3></a><a id="bfbed0a6-2593-49ab-9b56-e0436d29c06e" href="#bfbed0a6-2593-49ab-9b56-e0436d29c06e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#bfbed0a6-2593-49ab-9b56-e0436d29c06e">27:47</a></span><span>drill scratch</span></h3></a><a id="9f9de206-759c-4f60-bb75-b541ebc194d8" href="#9f9de206-759c-4f60-bb75-b541ebc194d8" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9f9de206-759c-4f60-bb75-b541ebc194d8">27:52</a></span><span>push twice bring cross air disk</span></h3></a><a id="a95c288a-f89f-4719-a44f-0dbf87e29d88" href="#a95c288a-f89f-4719-a44f-0dbf87e29d88" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a95c288a-f89f-4719-a44f-0dbf87e29d88">27:59</a></span><span>clear pit camel flatmap disk</span></h3></a><a id="7a025a50-3543-4650-a2d7-bb823ee6a4eb" href="#7a025a50-3543-4650-a2d7-bb823ee6a4eb" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7a025a50-3543-4650-a2d7-bb823ee6a4eb">28:24</a></span><span>problem next</span></h3></a><a id="a6b76ea4-fa13-4af6-a202-cf8eaeaf21f1" href="#a6b76ea4-fa13-4af6-a202-cf8eaeaf21f1" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a6b76ea4-fa13-4af6-a202-cf8eaeaf21f1">28:37</a></span><span>chuck bounding disk problem next</span></h3></a><a id="ca2465c5-e128-4ca2-b28a-12eb4a0cccb4" href="#ca2465c5-e128-4ca2-b28a-12eb4a0cccb4" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#ca2465c5-e128-4ca2-b28a-12eb4a0cccb4">28:49</a></span><span>join risk disk problem next</span></h3></a><a id="fc3ca6ee-0e72-4aa3-b49d-c9902edda408" href="#fc3ca6ee-0e72-4aa3-b49d-c9902edda408" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#fc3ca6ee-0e72-4aa3-b49d-c9902edda408">28:55</a></span><span>chuck line disk problem next</span></h3></a><a id="633c2e8a-c668-4553-84df-77aa3f446641" href="#633c2e8a-c668-4553-84df-77aa3f446641" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#633c2e8a-c668-4553-84df-77aa3f446641">28:59</a></span><span>chuck curving drip disk problem next</span></h3></a><a id="9492e717-8460-4200-9a32-e4bc231974f4" href="#9492e717-8460-4200-9a32-e4bc231974f4" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9492e717-8460-4200-9a32-e4bc231974f4">29:44</a></span><span>center funk</span></h3></a><a id="812f6dde-0cac-4056-befe-4afd2b1f19bf" href="#812f6dde-0cac-4056-befe-4afd2b1f19bf" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#812f6dde-0cac-4056-befe-4afd2b1f19bf">29:56</a></span><span>square wrap apple bolt whale disk</span></h3></a><a id="3646af81-b6d9-4d94-a1ef-bb0e9e8a3221" href="#3646af81-b6d9-4d94-a1ef-bb0e9e8a3221" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#3646af81-b6d9-4d94-a1ef-bb0e9e8a3221">30:01</a></span><span>problem next</span></h3></a><a id="c14a5044-00e7-4f8c-a1b4-9a0926c4d767" href="#c14a5044-00e7-4f8c-a1b4-9a0926c4d767" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c14a5044-00e7-4f8c-a1b4-9a0926c4d767">30:05</a></span><span>square wrap apple</span></h3></a><a id="533a8c0d-f4ec-4944-9099-433b66933cf5" href="#533a8c0d-f4ec-4944-9099-433b66933cf5" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#533a8c0d-f4ec-4944-9099-433b66933cf5">30:20</a></span><span>disk problem next</span></h3></a><a id="c21e63b4-05ef-4ead-abc9-74b11ea2317e" href="#c21e63b4-05ef-4ead-abc9-74b11ea2317e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c21e63b4-05ef-4ead-abc9-74b11ea2317e">30:28</a></span><span>square wrap apple bolt whale disk problem next</span></h3></a><a id="dc128076-2e54-4e97-98f3-f8d99b4c224b" href="#dc128076-2e54-4e97-98f3-f8d99b4c224b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#dc128076-2e54-4e97-98f3-f8d99b4c224b">30:37</a></span><span>square wrap apple disk problem next</span></h3></a><a id="c6643069-22c5-4a3d-b30b-a54795fcb0ed" href="#c6643069-22c5-4a3d-b30b-a54795fcb0ed" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c6643069-22c5-4a3d-b30b-a54795fcb0ed">30:45</a></span><span>square wrap apple blue spun</span></h3></a><a id="269226c5-8257-40c2-8b43-f4941c552d52" href="#269226c5-8257-40c2-8b43-f4941c552d52" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#269226c5-8257-40c2-8b43-f4941c552d52">30:48</a></span><span>nope</span></h3></a><a id="2a6c6bf7-ecb3-4588-890b-3c61022cf518" href="#2a6c6bf7-ecb3-4588-890b-3c61022cf518" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#2a6c6bf7-ecb3-4588-890b-3c61022cf518">30:50</a></span><span>square wrap apple blue trap disk problem next</span></h3></a><a id="5427c649-ff44-4983-96b4-e920cfe0992e" href="#5427c649-ff44-4983-96b4-e920cfe0992e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#5427c649-ff44-4983-96b4-e920cfe0992e">30:57</a></span><span>square wrap apple disk problem next</span></h3></a><a id="87dfb0df-6458-4359-85ce-ea9b940577fe" href="#87dfb0df-6458-4359-85ce-ea9b940577fe" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#87dfb0df-6458-4359-85ce-ea9b940577fe">31:11</a></span><span>square wrap value box urge disk problem next</span></h3></a><a id="93aaf1ca-8e73-4498-aa26-37990437d734" href="#93aaf1ca-8e73-4498-aa26-37990437d734" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#93aaf1ca-8e73-4498-aa26-37990437d734">31:40</a></span><span>git log</span></h3></a><a id="63b2475e-8d2a-493d-b3d7-222db7710484" href="#63b2475e-8d2a-493d-b3d7-222db7710484" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#63b2475e-8d2a-493d-b3d7-222db7710484">31:42</a></span><span>term zoom</span></h3></a><a id="16fad962-abf6-4e4a-852f-617f7f8ae444" href="#16fad962-abf6-4e4a-852f-617f7f8ae444" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#16fad962-abf6-4e4a-852f-617f7f8ae444">32:23</a></span><span>git pop to this</span></h3></a><a id="b51fd25c-eb81-4c30-8d98-375696e6578a" href="#b51fd25c-eb81-4c30-8d98-375696e6578a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#b51fd25c-eb81-4c30-8d98-375696e6578a">32:48</a></span><span>git pop back one</span></h3></a><a id="5da7f683-87a2-464a-9836-3aa005fcd4ac" href="#5da7f683-87a2-464a-9836-3aa005fcd4ac" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#5da7f683-87a2-464a-9836-3aa005fcd4ac">32:59</a></span><span>debug test debug console</span></h3></a><a id="9e761e0b-185a-4b41-93eb-91efc2c6e58d" href="#9e761e0b-185a-4b41-93eb-91efc2c6e58d" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9e761e0b-185a-4b41-93eb-91efc2c6e58d">35:51</a></span><span>zen mode git status</span></h3></a><a id="03adae2a-3ff9-4c6e-8edb-4f7c906cc2d8" href="#03adae2a-3ff9-4c6e-8edb-4f7c906cc2d8" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#03adae2a-3ff9-4c6e-8edb-4f7c906cc2d8">36:16</a></span><span>git commit support multiple targets per scope</span></h3></a><a id="f9d9ba91-a650-408b-abc8-93d16fb0efad" href="#f9d9ba91-a650-408b-abc8-93d16fb0efad" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#f9d9ba91-a650-408b-abc8-93d16fb0efad">36:21</a></span><span>disclose</span></h3></a><a id="f2a6a0e8-e65f-4336-ad9f-b121bfba5e9c" href="#f2a6a0e8-e65f-4336-ad9f-b121bfba5e9c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#f2a6a0e8-e65f-4336-ad9f-b121bfba5e9c">36:25</a></span><span>git log</span></h3></a><a id="d2fbf107-7584-4006-b525-99b330499763" href="#d2fbf107-7584-4006-b525-99b330499763" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d2fbf107-7584-4006-b525-99b330499763">36:27</a></span><span>side dog</span></h3></a><a id="cac761bb-e5ed-42a4-a828-120e564a54fc" href="#cac761bb-e5ed-42a4-a828-120e564a54fc" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#cac761bb-e5ed-42a4-a828-120e564a54fc">36:48</a></span><span>git move this to head</span></h3></a><a id="0c1e6406-bda5-4822-8934-1f3c76ce95ea" href="#0c1e6406-bda5-4822-8934-1f3c76ce95ea" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#0c1e6406-bda5-4822-8934-1f3c76ce95ea">37:00</a></span><span>git pop to this</span></h3></a><a id="013fe301-bd53-43f3-ad01-ef2ae241d4d9" href="#013fe301-bd53-43f3-ad01-ef2ae241d4d9" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#013fe301-bd53-43f3-ad01-ef2ae241d4d9">37:25</a></span><span>near go way down hover this</span></h3></a><a id="416b81dc-f23a-4a2e-ad91-72bda45b53ad" href="#416b81dc-f23a-4a2e-ad91-72bda45b53ad" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#416b81dc-f23a-4a2e-ad91-72bda45b53ad">37:34</a></span><span>zen mode</span></h3></a><a id="8be2b1af-c4cd-4064-ac8c-c04b4c95919a" href="#8be2b1af-c4cd-4064-ac8c-c04b4c95919a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#8be2b1af-c4cd-4064-ac8c-c04b4c95919a">37:36</a></span><span>disk oliver git status</span></h3></a><a id="525b5c30-b03b-4e0d-9c9c-17a687ed9148" href="#525b5c30-b03b-4e0d-9c9c-17a687ed9148" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#525b5c30-b03b-4e0d-9c9c-17a687ed9148">37:51</a></span><span>cross</span></h3></a><a id="57fe61b0-9c8e-4699-9e29-a3398ed1a585" href="#57fe61b0-9c8e-4699-9e29-a3398ed1a585" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#57fe61b0-9c8e-4699-9e29-a3398ed1a585">37:55</a></span><span>pop dock javascript react to zen mode</span></h3></a><a id="7824ddf2-3517-4167-89e5-9c01a28afe57" href="#7824ddf2-3517-4167-89e5-9c01a28afe57" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7824ddf2-3517-4167-89e5-9c01a28afe57">37:59</a></span><span>list dock javascript react</span></h3></a><a id="796785b3-1b16-4f29-ae05-58d66a864f51" href="#796785b3-1b16-4f29-ae05-58d66a864f51" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#796785b3-1b16-4f29-ae05-58d66a864f51">38:02</a></span><span>clap</span></h3></a><a id="e02a9df6-90a1-44da-837f-cddc0b365c36" href="#e02a9df6-90a1-44da-837f-cddc0b365c36" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#e02a9df6-90a1-44da-837f-cddc0b365c36">38:32</a></span><span>debug stench</span></h3></a><a id="fb8f7de0-be60-4481-a83b-075f9f7c04a8" href="#fb8f7de0-be60-4481-a83b-075f9f7c04a8" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#fb8f7de0-be60-4481-a83b-075f9f7c04a8">38:38</a></span><span>diamond push word hello push diamond stroke</span></h3></a><a id="d889085d-ec16-4a6f-80ae-5a8812eed227" href="#d889085d-ec16-4a6f-80ae-5a8812eed227" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d889085d-ec16-4a6f-80ae-5a8812eed227">42:13</a></span><span>copy line</span></h3></a><a id="ecc755ca-6f96-41ff-9d49-2f5f05ebcc11" href="#ecc755ca-6f96-41ff-9d49-2f5f05ebcc11" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#ecc755ca-6f96-41ff-9d49-2f5f05ebcc11">42:15</a></span><span>pop stopper</span></h3></a><a id="339ee4e4-726c-42b9-a42f-ab1ee7f8bec3" href="#339ee4e4-726c-42b9-a42f-ab1ee7f8bec3" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#339ee4e4-726c-42b9-a42f-ab1ee7f8bec3">42:17</a></span><span>cross</span></h3></a><a id="bfe79313-01fd-4f35-bab9-bb0c1eb02e2b" href="#bfe79313-01fd-4f35-bab9-bb0c1eb02e2b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#bfe79313-01fd-4f35-bab9-bb0c1eb02e2b">42:19</a></span><span>pop dock tree sitter scope handler</span></h3></a><a id="5cd58bc1-37fd-41f7-907a-302c1e0f4776" href="#5cd58bc1-37fd-41f7-907a-302c1e0f4776" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#5cd58bc1-37fd-41f7-907a-302c1e0f4776">42:26</a></span><span>center file</span></h3></a><a id="fd3ae678-77fb-4142-8347-bc5ef77cc57e" href="#fd3ae678-77fb-4142-8347-bc5ef77cc57e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#fd3ae678-77fb-4142-8347-bc5ef77cc57e">42:42</a></span><span>pre class</span></h3></a><a id="60ea7bd8-642d-423a-906d-1ddcf00429ac" href="#60ea7bd8-642d-423a-906d-1ddcf00429ac" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#60ea7bd8-642d-423a-906d-1ddcf00429ac">42:46</a></span><span>falling risk</span></h3></a><a id="637b9312-6ccb-4c4b-9746-b23235aca27a" href="#637b9312-6ccb-4c4b-9746-b23235aca27a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#637b9312-6ccb-4c4b-9746-b23235aca27a">44:41</a></span><span>round wrap value play trap</span></h3></a><a id="48daae51-bb45-429c-8921-d4150286c82a" href="#48daae51-bb45-429c-8921-d4150286c82a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#48daae51-bb45-429c-8921-d4150286c82a">44:49</a></span><span>pre that camel merge adjacent by</span></h3></a><a id="8b53504e-f322-4e03-8ed6-56a0b186324a" href="#8b53504e-f322-4e03-8ed6-56a0b186324a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#8b53504e-f322-4e03-8ed6-56a0b186324a">44:54</a></span><span>disk</span></h3></a><a id="9de106c7-ff04-408d-8506-fa4675837ccf" href="#9de106c7-ff04-408d-8506-fa4675837ccf" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9de106c7-ff04-408d-8506-fa4675837ccf">45:18</a></span><span>pour entry play trap snip lambda</span></h3></a><a id="44112224-9729-4b1b-8e14-cb64526d85be" href="#44112224-9729-4b1b-8e14-cb64526d85be" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#44112224-9729-4b1b-8e14-cb64526d85be">45:22</a></span><span>nope</span></h3></a><a id="1ea2d73a-cbd7-4a69-99d4-f9dc46039553" href="#1ea2d73a-cbd7-4a69-99d4-f9dc46039553" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1ea2d73a-cbd7-4a69-99d4-f9dc46039553">45:37</a></span><span>nope</span></h3></a><a id="826b3139-75c5-480c-be40-05484604b99b" href="#826b3139-75c5-480c-be40-05484604b99b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#826b3139-75c5-480c-be40-05484604b99b">45:39</a></span><span>pour line entry play trap</span></h3></a><a id="96ab60a5-0047-4eaa-a6e4-700911ccf3de" href="#96ab60a5-0047-4eaa-a6e4-700911ccf3de" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#96ab60a5-0047-4eaa-a6e4-700911ccf3de">45:46</a></span><span>yes</span></h3></a><a id="ad7f408c-88f8-40be-b61a-4cfa7cc3a064" href="#ad7f408c-88f8-40be-b61a-4cfa7cc3a064" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#ad7f408c-88f8-40be-b61a-4cfa7cc3a064">46:05</a></span><span>post first word cross quench proud range</span></h3></a><a id="9ee46243-dc13-4f3d-b282-a29a95b05339" href="#9ee46243-dc13-4f3d-b282-a29a95b05339" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9ee46243-dc13-4f3d-b282-a29a95b05339">46:27</a></span><span>clone line</span></h3></a><a id="11ea36c6-e2aa-46b1-b474-ca6367d270e2" href="#11ea36c6-e2aa-46b1-b474-ca6367d270e2" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#11ea36c6-e2aa-46b1-b474-ca6367d270e2">46:48</a></span><span>clear apple</span></h3></a><a id="ce8448ae-3751-45b8-84f1-b6bc467d2f5a" href="#ce8448ae-3751-45b8-84f1-b6bc467d2f5a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#ce8448ae-3751-45b8-84f1-b6bc467d2f5a">46:52</a></span><span>round big curly</span></h3></a><a id="3619af64-d468-4feb-9be9-a57f7a7c6ef3" href="#3619af64-d468-4feb-9be9-a57f7a7c6ef3" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#3619af64-d468-4feb-9be9-a57f7a7c6ef3">46:58</a></span><span>yes clap</span></h3></a><a id="3162b325-9643-4ae8-9a43-57ba43411258" href="#3162b325-9643-4ae8-9a43-57ba43411258" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#3162b325-9643-4ae8-9a43-57ba43411258">47:05</a></span><span>bring blue air point org</span></h3></a><a id="a6c73e2e-674a-4802-aa76-9bb8eadbb152" href="#a6c73e2e-674a-4802-aa76-9bb8eadbb152" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a6c73e2e-674a-4802-aa76-9bb8eadbb152">47:09</a></span><span>scratcher</span></h3></a><a id="1e85d85c-3439-4350-92d0-2943cba227d3" href="#1e85d85c-3439-4350-92d0-2943cba227d3" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1e85d85c-3439-4350-92d0-2943cba227d3">47:18</a></span><span>camel get targets round</span></h3></a><a id="8f78b507-90ef-43e3-9875-babd3a8c43d2" href="#8f78b507-90ef-43e3-9875-babd3a8c43d2" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#8f78b507-90ef-43e3-9875-babd3a8c43d2">47:24</a></span><span>camel is reversed is type bool</span></h3></a><a id="26376e4c-af29-4260-b86a-021068a81fb2" href="#26376e4c-af29-4260-b86a-021068a81fb2" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#26376e4c-af29-4260-b86a-021068a81fb2">47:30</a></span><span>breaker</span></h3></a><a id="8d40bb6d-5a95-4987-8a21-58003787fa76" href="#8d40bb6d-5a95-4987-8a21-58003787fa76" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#8d40bb6d-5a95-4987-8a21-58003787fa76">47:35</a></span><span>yes</span></h3></a><a id="0d9a73af-bef8-4f92-9d1c-1b0a5e4ef4d7" href="#0d9a73af-bef8-4f92-9d1c-1b0a5e4ef4d7" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#0d9a73af-bef8-4f92-9d1c-1b0a5e4ef4d7">47:37</a></span><span>disk</span></h3></a><a id="fd4cb70e-be52-43f3-bc7a-2fc382db0dd9" href="#fd4cb70e-be52-43f3-bc7a-2fc382db0dd9" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#fd4cb70e-be52-43f3-bc7a-2fc382db0dd9">47:49</a></span><span>quick fix blue gust</span></h3></a><a id="48486e10-060e-4ecf-ab92-fa752677fd26" href="#48486e10-060e-4ecf-ab92-fa752677fd26" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#48486e10-060e-4ecf-ab92-fa752677fd26">47:52</a></span><span>clap</span></h3></a><a id="47a856d2-513c-44de-9e04-d64510c2be48" href="#47a856d2-513c-44de-9e04-d64510c2be48" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#47a856d2-513c-44de-9e04-d64510c2be48">47:56</a></span><span>falling that</span></h3></a><a id="b0b8ed25-db76-49b9-a343-0d4987f1c59d" href="#b0b8ed25-db76-49b9-a343-0d4987f1c59d" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#b0b8ed25-db76-49b9-a343-0d4987f1c59d">47:58</a></span><span>disk</span></h3></a><a id="1a96b125-e09a-4f2c-ad14-3a194daf4ab0" href="#1a96b125-e09a-4f2c-ad14-3a194daf4ab0" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1a96b125-e09a-4f2c-ad14-3a194daf4ab0">48:30</a></span><span>bring type pit to gust</span></h3></a><a id="88eeadeb-2da1-4de3-9d66-35b20c87381b" href="#88eeadeb-2da1-4de3-9d66-35b20c87381b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#88eeadeb-2da1-4de3-9d66-35b20c87381b">48:40</a></span><span>step diamond ship trap clear six views york ship trap</span></h3></a><a id="0cd8e832-b2e2-4a5a-a497-03265d0aed1b" href="#0cd8e832-b2e2-4a5a-a497-03265d0aed1b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#0cd8e832-b2e2-4a5a-a497-03265d0aed1b">48:46</a></span><span>scrape</span></h3></a><a id="408e6ca4-5b48-49f8-b96c-f7a2ddfedbba" href="#408e6ca4-5b48-49f8-b96c-f7a2ddfedbba" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#408e6ca4-5b48-49f8-b96c-f7a2ddfedbba">48:49</a></span><span>clear trap type bool</span></h3></a><a id="476c33d1-b8fd-4c98-9961-6519c237c582" href="#476c33d1-b8fd-4c98-9961-6519c237c582" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#476c33d1-b8fd-4c98-9961-6519c237c582">48:52</a></span><span>nope</span></h3></a><a id="cfe84cf8-c358-4346-90a4-1303e5d092a3" href="#cfe84cf8-c358-4346-90a4-1303e5d092a3" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#cfe84cf8-c358-4346-90a4-1303e5d092a3">48:57</a></span><span>clear cross trap type bool</span></h3></a><a id="d742f220-d908-4530-bd4f-87c3bdea42c4" href="#d742f220-d908-4530-bd4f-87c3bdea42c4" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d742f220-d908-4530-bd4f-87c3bdea42c4">49:12</a></span><span>clear one camel is equal</span></h3></a><a id="e13607fc-e573-48fb-8904-e8234dd60cfe" href="#e13607fc-e573-48fb-8904-e8234dd60cfe" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#e13607fc-e573-48fb-8904-e8234dd60cfe">49:16</a></span><span>scratch proud equal</span></h3></a><a id="48628d2a-48ee-4f8c-8ad9-e59192e42c4c" href="#48628d2a-48ee-4f8c-8ad9-e59192e42c4c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#48628d2a-48ee-4f8c-8ad9-e59192e42c4c">49:19</a></span><span>clear two word merge</span></h3></a><a id="dc20b0d2-5636-4463-a4a6-1a7dcaf114fe" href="#dc20b0d2-5636-4463-a4a6-1a7dcaf114fe" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#dc20b0d2-5636-4463-a4a6-1a7dcaf114fe">49:26</a></span><span>clear zero word input</span></h3></a><a id="f91e1af5-b186-4b78-8cc4-4bd09a6a6610" href="#f91e1af5-b186-4b78-8cc4-4bd09a6a6610" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#f91e1af5-b186-4b78-8cc4-4bd09a6a6610">49:30</a></span><span>disk</span></h3></a><a id="b33d9331-e95c-41a1-a435-3ced99d0a01e" href="#b33d9331-e95c-41a1-a435-3ced99d0a01e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#b33d9331-e95c-41a1-a435-3ced99d0a01e">49:34</a></span><span>bring trap to pit</span></h3></a><a id="d212728c-17bd-4e85-aae6-e7b970112fa4" href="#d212728c-17bd-4e85-aae6-e7b970112fa4" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d212728c-17bd-4e85-aae6-e7b970112fa4">49:36</a></span><span>disk</span></h3></a><a id="254018bc-efc5-47d3-8876-e343aa910f19" href="#254018bc-efc5-47d3-8876-e343aa910f19" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#254018bc-efc5-47d3-8876-e343aa910f19">49:46</a></span><span>chuck snow</span></h3></a><a id="50fe186d-d963-472e-8456-93a62ec9228f" href="#50fe186d-d963-472e-8456-93a62ec9228f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#50fe186d-d963-472e-8456-93a62ec9228f">50:11</a></span><span>quick fix funk</span></h3></a><a id="b2228dfc-6ea0-450a-8755-22c9320bf4bd" href="#b2228dfc-6ea0-450a-8755-22c9320bf4bd" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#b2228dfc-6ea0-450a-8755-22c9320bf4bd">50:17</a></span><span>disk</span></h3></a><a id="27692415-b0f6-4967-836e-05ef0e877fa1" href="#27692415-b0f6-4967-836e-05ef0e877fa1" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#27692415-b0f6-4967-836e-05ef0e877fa1">50:19</a></span><span>pageup</span></h3></a><a id="dcb0ece6-c52f-4bd4-b8e8-567c8fb85f63" href="#dcb0ece6-c52f-4bd4-b8e8-567c8fb85f63" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#dcb0ece6-c52f-4bd4-b8e8-567c8fb85f63">50:22</a></span><span>falling bat</span></h3></a><a id="124fe8a5-9f75-4499-8060-def9ae977c4c" href="#124fe8a5-9f75-4499-8060-def9ae977c4c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#124fe8a5-9f75-4499-8060-def9ae977c4c">50:24</a></span><span>disk</span></h3></a><a id="1966614c-ecc1-4862-91fc-6fdcf06608e2" href="#1966614c-ecc1-4862-91fc-6fdcf06608e2" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1966614c-ecc1-4862-91fc-6fdcf06608e2">50:29</a></span><span>bring blue trap to cap</span></h3></a><a id="c7ba7932-1f32-4c2f-85a2-e2b629edc8f3" href="#c7ba7932-1f32-4c2f-85a2-e2b629edc8f3" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c7ba7932-1f32-4c2f-85a2-e2b629edc8f3">50:33</a></span><span>disk</span></h3></a><a id="d4ab6e3e-d015-4444-b47c-a5e0ef8bf2a9" href="#d4ab6e3e-d015-4444-b47c-a5e0ef8bf2a9" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d4ab6e3e-d015-4444-b47c-a5e0ef8bf2a9">50:38</a></span><span>clear core harp</span></h3></a><a id="171520fe-b080-4a6d-919b-ce2d536318be" href="#171520fe-b080-4a6d-919b-ce2d536318be" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#171520fe-b080-4a6d-919b-ce2d536318be">50:41</a></span><span>pilot jest</span></h3></a><a id="c0f9db22-9138-497f-9600-4a0e2277ff9f" href="#c0f9db22-9138-497f-9600-4a0e2277ff9f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c0f9db22-9138-497f-9600-4a0e2277ff9f">50:46</a></span><span>yes</span></h3></a><a id="29dd2988-2790-4185-9214-d5aa9f8197e8" href="#29dd2988-2790-4185-9214-d5aa9f8197e8" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#29dd2988-2790-4185-9214-d5aa9f8197e8">50:48</a></span><span>disk</span></h3></a><a id="9bac44b1-aa6b-4757-bc83-a75b71320846" href="#9bac44b1-aa6b-4757-bc83-a75b71320846" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9bac44b1-aa6b-4757-bc83-a75b71320846">51:24</a></span><span>post blue look stack void ship trap square disk</span></h3></a><a id="27914b4f-5a65-4feb-adb1-4da6e645fe4f" href="#27914b4f-5a65-4feb-adb1-4da6e645fe4f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#27914b4f-5a65-4feb-adb1-4da6e645fe4f">51:34</a></span><span>chuck pair</span></h3></a><a id="24e556a3-04a6-4502-be68-2466236b3f06" href="#24e556a3-04a6-4502-be68-2466236b3f06" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#24e556a3-04a6-4502-be68-2466236b3f06">51:36</a></span><span>disk</span></h3></a><a id="b27aa24f-bfad-4245-b404-784855e7bd1c" href="#b27aa24f-bfad-4245-b404-784855e7bd1c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#b27aa24f-bfad-4245-b404-784855e7bd1c">51:56</a></span><span>dock string funk</span></h3></a><a id="d18fb895-2f23-46d1-8351-ebf9799fcaf2" href="#d18fb895-2f23-46d1-8351-ebf9799fcaf2" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d18fb895-2f23-46d1-8351-ebf9799fcaf2">52:00</a></span><span>chuck trailing block</span></h3></a><a id="efc9afd7-f5cf-49cd-8062-b99113a1d91e" href="#efc9afd7-f5cf-49cd-8062-b99113a1d91e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#efc9afd7-f5cf-49cd-8062-b99113a1d91e">52:04</a></span><span>pilot jest</span></h3></a><a id="e3426607-abab-46fb-8b17-605657b6581e" href="#e3426607-abab-46fb-8b17-605657b6581e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#e3426607-abab-46fb-8b17-605657b6581e">52:07</a></span><span>pilot jest</span></h3></a><a id="1290153b-72c6-4cfc-bd70-658df2feffdb" href="#1290153b-72c6-4cfc-bd70-658df2feffdb" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1290153b-72c6-4cfc-bd70-658df2feffdb">52:11</a></span><span>sense the input list next</span></h3></a><a id="6b9d0638-667e-414f-89ff-e524a66cc3d6" href="#6b9d0638-667e-414f-89ff-e524a66cc3d6" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#6b9d0638-667e-414f-89ff-e524a66cc3d6">52:14</a></span><span>scratcher</span></h3></a><a id="a1989dd0-878f-4922-8238-1d38e449978c" href="#a1989dd0-878f-4922-8238-1d38e449978c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a1989dd0-878f-4922-8238-1d38e449978c">52:16</a></span><span>scratch next</span></h3></a><a id="d4f50c86-acda-4294-8d8e-7c529c324169" href="#d4f50c86-acda-4294-8d8e-7c529c324169" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d4f50c86-acda-4294-8d8e-7c529c324169">52:21</a></span><span>snip last</span></h3></a><a id="54329268-1371-4ac1-8f62-695d4e654e33" href="#54329268-1371-4ac1-8f62-695d4e654e33" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#54329268-1371-4ac1-8f62-695d4e654e33">52:23</a></span><span>push void</span></h3></a><a id="795795df-7422-45ad-a8d7-0ef08a72e1cc" href="#795795df-7422-45ad-a8d7-0ef08a72e1cc" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#795795df-7422-45ad-a8d7-0ef08a72e1cc">52:25</a></span><span>yes next</span></h3></a><a id="97661acc-3923-49ff-903c-42738e532e60" href="#97661acc-3923-49ff-903c-42738e532e60" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#97661acc-3923-49ff-903c-42738e532e60">52:28</a></span><span>pilot jest</span></h3></a><a id="ea6d93bf-ac30-4424-92bb-9664a27b4507" href="#ea6d93bf-ac30-4424-92bb-9664a27b4507" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#ea6d93bf-ac30-4424-92bb-9664a27b4507">52:32</a></span><span>dash is in curly pit snow whale then arc tan trot the union yes times</span></h3></a><a id="1ec58b74-03e6-4532-9951-ec4cfb487d44" href="#1ec58b74-03e6-4532-9951-ec4cfb487d44" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1ec58b74-03e6-4532-9951-ec4cfb487d44">52:42</a></span><span>scratch</span></h3></a><a id="676686f3-7547-465b-a18f-0c726b0dd66c" href="#676686f3-7547-465b-a18f-0c726b0dd66c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#676686f3-7547-465b-a18f-0c726b0dd66c">52:46</a></span><span>sense of function</span></h3></a><a id="59960d53-290f-4414-95ea-ffd7e8f67c38" href="#59960d53-290f-4414-95ea-ffd7e8f67c38" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#59960d53-290f-4414-95ea-ffd7e8f67c38">52:51</a></span><span>clear star oats ship air tail</span></h3></a><a id="bc45cd10-d42c-421c-97d9-5e89b4378638" href="#bc45cd10-d42c-421c-97d9-5e89b4378638" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#bc45cd10-d42c-421c-97d9-5e89b4378638">52:55</a></span><span>void</span></h3></a><a id="059d1ab3-23d3-44d6-9004-efbff6ca1f0f" href="#059d1ab3-23d3-44d6-9004-efbff6ca1f0f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#059d1ab3-23d3-44d6-9004-efbff6ca1f0f">52:57</a></span><span>yes next</span></h3></a><a id="089d164e-c177-4b05-81a2-e5b2629c8f3b" href="#089d164e-c177-4b05-81a2-e5b2629c8f3b" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#089d164e-c177-4b05-81a2-e5b2629c8f3b">53:00</a></span><span>yes next</span></h3></a><a id="f4c0e06a-9b00-471f-b83f-92865f1a9b36" href="#f4c0e06a-9b00-471f-b83f-92865f1a9b36" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#f4c0e06a-9b00-471f-b83f-92865f1a9b36">53:07</a></span><span>boom</span></h3></a><a id="e14174ee-9cd7-4dc5-8e45-842ef93d9d33" href="#e14174ee-9cd7-4dc5-8e45-842ef93d9d33" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#e14174ee-9cd7-4dc5-8e45-842ef93d9d33">53:12</a></span><span>scratch clap</span></h3></a><a id="30dafc18-53b9-4b6b-ab14-f81fd4975326" href="#30dafc18-53b9-4b6b-ab14-f81fd4975326" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#30dafc18-53b9-4b6b-ab14-f81fd4975326">53:15</a></span><span>yes</span></h3></a><a id="cd5bc12c-047d-44d8-8b15-bd26b7de7a4f" href="#cd5bc12c-047d-44d8-8b15-bd26b7de7a4f" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#cd5bc12c-047d-44d8-8b15-bd26b7de7a4f">53:17</a></span><span>disk</span></h3></a><a id="7188068e-8521-4f2d-9aa9-3f2e4f8e96bc" href="#7188068e-8521-4f2d-9aa9-3f2e4f8e96bc" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#7188068e-8521-4f2d-9aa9-3f2e4f8e96bc">53:31</a></span><span>pop last</span></h3></a><a id="be030ff0-7a13-4d61-82e1-e235e68cd723" href="#be030ff0-7a13-4d61-82e1-e235e68cd723" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#be030ff0-7a13-4d61-82e1-e235e68cd723">54:35</a></span><span>fold oats</span></h3></a><a id="26855569-c2a7-4527-8d84-a9d99de651ea" href="#26855569-c2a7-4527-8d84-a9d99de651ea" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#26855569-c2a7-4527-8d84-a9d99de651ea">54:38</a></span><span>unfold that</span></h3></a><a id="d0116afe-6b29-430a-ba9e-087ef558519d" href="#d0116afe-6b29-430a-ba9e-087ef558519d" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d0116afe-6b29-430a-ba9e-087ef558519d">54:40</a></span><span>falling oats</span></h3></a><a id="6702faaf-d5cd-440c-8a65-c57e628d6a03" href="#6702faaf-d5cd-440c-8a65-c57e628d6a03" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#6702faaf-d5cd-440c-8a65-c57e628d6a03">55:01</a></span><span>debug stench</span></h3></a><a id="b01e1fb9-c6e1-4f89-b78d-53be94e1a794" href="#b01e1fb9-c6e1-4f89-b78d-53be94e1a794" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#b01e1fb9-c6e1-4f89-b78d-53be94e1a794">55:08</a></span><span>empty diamond word hello diamond stroke</span></h3></a><a id="41225877-4785-4636-9db0-ca2c66fac2e9" href="#41225877-4785-4636-9db0-ca2c66fac2e9" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#41225877-4785-4636-9db0-ca2c66fac2e9">55:14</a></span><span>post second car harp</span></h3></a><a id="1f10c896-2664-4ec9-86ec-980d4fc5415e" href="#1f10c896-2664-4ec9-86ec-980d4fc5415e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1f10c896-2664-4ec9-86ec-980d4fc5415e">55:18</a></span><span>take tags</span></h3></a><a id="a9eb8454-2b4c-4a5e-ab0e-a5379192dcce" href="#a9eb8454-2b4c-4a5e-ab0e-a5379192dcce" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a9eb8454-2b4c-4a5e-ab0e-a5379192dcce">55:23</a></span><span>please mode clap word javascript</span></h3></a><a id="b26589e7-c167-47fc-a8a3-5db82e7e4956" href="#b26589e7-c167-47fc-a8a3-5db82e7e4956" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#b26589e7-c167-47fc-a8a3-5db82e7e4956">55:27</a></span><span>scratcher word typescript</span></h3></a><a id="9f2fc7a5-ee52-4011-a6c0-f05069337ad2" href="#9f2fc7a5-ee52-4011-a6c0-f05069337ad2" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9f2fc7a5-ee52-4011-a6c0-f05069337ad2">55:30</a></span><span>pit</span></h3></a><a id="3f31e4ad-e7a7-4a2a-ad3e-0963012f74ad" href="#3f31e4ad-e7a7-4a2a-ad3e-0963012f74ad" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#3f31e4ad-e7a7-4a2a-ad3e-0963012f74ad">55:31</a></span><span>scratch</span></h3></a><a id="54037d2f-0644-4254-afac-e9bd21fcb17d" href="#54037d2f-0644-4254-afac-e9bd21fcb17d" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#54037d2f-0644-4254-afac-e9bd21fcb17d">55:33</a></span><span>choose two</span></h3></a><a id="76dcad1a-4416-4ef7-99d0-9b800e3f2cba" href="#76dcad1a-4416-4ef7-99d0-9b800e3f2cba" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#76dcad1a-4416-4ef7-99d0-9b800e3f2cba">55:46</a></span><span>scratch</span></h3></a><a id="a0c428cf-919a-4ebc-9bdf-d72380cee6fb" href="#a0c428cf-919a-4ebc-9bdf-d72380cee6fb" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#a0c428cf-919a-4ebc-9bdf-d72380cee6fb">55:47</a></span><span>post second car harp</span></h3></a><a id="9960fdeb-4b07-46eb-9e43-5d1b465a3e4d" href="#9960fdeb-4b07-46eb-9e43-5d1b465a3e4d" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9960fdeb-4b07-46eb-9e43-5d1b465a3e4d">55:50</a></span><span>take tags</span></h3></a><a id="c1492b85-f7e6-464f-aa2b-78c5be3489cf" href="#c1492b85-f7e6-464f-aa2b-78c5be3489cf" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#c1492b85-f7e6-464f-aa2b-78c5be3489cf">56:03</a></span><span>curse undo</span></h3></a><a id="d70ff0ae-6014-4868-bde4-930068b2afb6" href="#d70ff0ae-6014-4868-bde4-930068b2afb6" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d70ff0ae-6014-4868-bde4-930068b2afb6">56:07</a></span><span>take elm</span></h3></a><a id="0a357fde-046c-40c1-8b64-1c8eabcdc652" href="#0a357fde-046c-40c1-8b64-1c8eabcdc652" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#0a357fde-046c-40c1-8b64-1c8eabcdc652">56:19</a></span><span>curse undo</span></h3></a><a id="2b9de607-c68f-4203-9fda-b2a00c653159" href="#2b9de607-c68f-4203-9fda-b2a00c653159" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#2b9de607-c68f-4203-9fda-b2a00c653159">56:21</a></span><span>take name tags</span></h3></a><a id="d9475726-1803-4e3c-a8b6-f4fec7358f42" href="#d9475726-1803-4e3c-a8b6-f4fec7358f42" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d9475726-1803-4e3c-a8b6-f4fec7358f42">56:38</a></span><span>google scout html elements</span></h3></a><a id="487f903c-7919-4874-b890-6dc9842304fc" href="#487f903c-7919-4874-b890-6dc9842304fc" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#487f903c-7919-4874-b890-6dc9842304fc">56:50</a></span><span>coder</span></h3></a><a id="65846b69-33b9-4733-90fa-119dcb7c5000" href="#65846b69-33b9-4733-90fa-119dcb7c5000" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#65846b69-33b9-4733-90fa-119dcb7c5000">56:59</a></span><span>pop sesh</span></h3></a><a id="6b114c48-7e08-4479-affa-feb7ceaa8ac4" href="#6b114c48-7e08-4479-affa-feb7ceaa8ac4" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#6b114c48-7e08-4479-affa-feb7ceaa8ac4">57:36</a></span><span>move paint ears made before star drum</span></h3></a><a id="f2684c83-b5a1-4629-8fc6-c22159fb752a" href="#f2684c83-b5a1-4629-8fc6-c22159fb752a" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#f2684c83-b5a1-4629-8fc6-c22159fb752a">57:41</a></span><span>clear red near word start</span></h3></a><a id="6bce8041-5c17-417f-8a83-70b836ae8879" href="#6bce8041-5c17-417f-8a83-70b836ae8879" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#6bce8041-5c17-417f-8a83-70b836ae8879">57:44</a></span><span>disk</span></h3></a><a id="2394d53a-e490-4332-a095-453f38d41bb5" href="#2394d53a-e490-4332-a095-453f38d41bb5" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#2394d53a-e490-4332-a095-453f38d41bb5">57:49</a></span><span>debug stopper debug stench</span></h3></a><a id="1d129a59-d601-4c0a-b4dc-7d35c5efec73" href="#1d129a59-d601-4c0a-b4dc-7d35c5efec73" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1d129a59-d601-4c0a-b4dc-7d35c5efec73">57:55</a></span><span>empty diamond word hello</span></h3></a><a id="e2645627-44d7-4d1d-b0da-60258b266601" href="#e2645627-44d7-4d1d-b0da-60258b266601" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#e2645627-44d7-4d1d-b0da-60258b266601">57:58</a></span><span>diamond stroke</span></h3></a><a id="8a173aac-98c9-457b-9e22-77b5fb228943" href="#8a173aac-98c9-457b-9e22-77b5fb228943" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#8a173aac-98c9-457b-9e22-77b5fb228943">58:00</a></span><span>post second car harp</span></h3></a><a id="9d13be88-d3b0-4f62-800c-fd04d5e8fbe3" href="#9d13be88-d3b0-4f62-800c-fd04d5e8fbe3" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#9d13be88-d3b0-4f62-800c-fd04d5e8fbe3">58:03</a></span><span>take name tags</span></h3></a><a id="1b25aa31-37b5-4b75-80bc-5b3963cff195" href="#1b25aa31-37b5-4b75-80bc-5b3963cff195" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#1b25aa31-37b5-4b75-80bc-5b3963cff195">58:18</a></span><span>curse undo</span></h3></a><a id="d2142bed-d8a5-4091-bce3-4e063b05f80c" href="#d2142bed-d8a5-4091-bce3-4e063b05f80c" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#d2142bed-d8a5-4091-bce3-4e063b05f80c">58:20</a></span><span>take name tags word whatever</span></h3></a><a id="6fda5e4b-4ccb-4129-8737-42b254db7a6e" href="#6fda5e4b-4ccb-4129-8737-42b254db7a6e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#6fda5e4b-4ccb-4129-8737-42b254db7a6e">58:42</a></span><span>pop stopper</span></h3></a><a id="b18e4ff3-c162-48c1-b8b6-449cd21ba91e" href="#b18e4ff3-c162-48c1-b8b6-449cd21ba91e" class=" block bg-stone-200 dark:bg-stone-800 p-2 max-w-prose "><h3 class="text-sm text-stone-600 dark:text-stone-400"><span class="text-xs dark:text-purple-600 inline-block mr-1 hover:text-purple-500 text-purple-800 dark:hover:text-purple-300"><a href="#b18e4ff3-c162-48c1-b8b6-449cd21ba91e">59:06</a></span><span>record stop</span></h3></a></div></div></div></div></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/videos/iK7cKIgWcBs/";window.___webpackCompilationHash="b2c10eb7379b2f713322";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-35fcd7922f31dcb08fdb.js"],"app":["/app-b78ce4b95c5d4ffb1411.js"],"component---src-pages-404-js":["/component---src-pages-404-js-163e8109c99cd212dbac.js"],"component---src-pages-index-js":["/component---src-pages-index-js-8bc50ed697a23b174d04.js"],"component---src-pages-videos-videos-json-youtube-slug-tsx":["/component---src-pages-videos-videos-json-youtube-slug-tsx-d6d83789f69569d8415c.js"]};/*]]>*/</script><script src="/polyfill-35fcd7922f31dcb08fdb.js" nomodule=""></script><script src="/component---src-pages-videos-videos-json-youtube-slug-tsx-d6d83789f69569d8415c.js" async=""></script><script src="/app-b78ce4b95c5d4ffb1411.js" async=""></script><script src="/framework-99e33940d15df3440d02.js" async=""></script><script src="/webpack-runtime-4b4d0f91148dea84a0d7.js" async=""></script></body></html>
