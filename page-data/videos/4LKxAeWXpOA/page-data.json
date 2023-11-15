@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-videos-videos-json-youtube-slug-tsx",
+    "path": "/videos/4LKxAeWXpOA/",
+    "result": {"data":{"videosJson":{"youtubeSlug":"4LKxAeWXpOA","transcript":[{"commands":[{"phrase":"record stop","grammar":"record stop","isCursorlessCommand":false,"ruleUri":"https://github.com/pokey/pokey_talon/blob/facefd54a4e14c355b07dde71b1ac2a600785dcd/plugin/record/record_active.talon#L4"}],"id":"032a2481-51e7-4b69-861a-cb1c71f48ad5","phrase":"record stop","graceStartOffset":136.89729429737045,"startOffset":137.92195037839045,"endOffset":139.1,"graceEndOffset":139.1}],"title":"Cursorless scope sidebar"}},"pageContext":{"id":"b4993ac9-bdce-5ebe-a40f-08c969a04c70","youtubeSlug":"4LKxAeWXpOA","__params":{"youtubeSlug":"4LKxAeWXpOA"}}},
+    "staticQueryHashes": []}
